@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Appendix: A General Formulation of Discounted Present Value</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-05-end-of-chapter-material.html"><img src="shared/images/batch-left.png"></a> <a href="s14-05-end-of-chapter-material.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-00-raising-the-wage-floor.html">Next Section</a> <a href="s15-00-raising-the-wage-floor.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch10_s06" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.6</span> Appendix: A General Formulation of Discounted Present Value</h2>
+    <p class="para editable block" id="cooperecon-ch10_s06_p01">This section presents a more general way of thinking about discounted present value. The economic idea is the same as the one we encountered when discussing the pricing of orange trees. Here the idea is to isolate the central ideas of discounted present value. We then use this more general formulation to talk about the pricing of stocks in an asset market.</p>
+    <p class="para editable block" id="cooperecon-ch10_s06_p02">We begin by defining the <em class="emphasis">t</em>-period real interest factor between the present date and some future date <em class="emphasis">t</em> years from now. The <em class="emphasis">t</em>-period real interest factor is simply the amount by which you must discount when calculating a discounted present value of a flow benefit (already adjusted for inflation) that will be received <em class="emphasis">t</em> years from now.</p>
+    <p class="para editable block" id="cooperecon-ch10_s06_p03">Suppose we have an asset that will provide real dividend payments every year for <em class="emphasis">t</em> years. Suppose that <em class="emphasis">D</em><sub class="subscript"><em class="emphasis">t</em></sub> is the real dividend in period <em class="emphasis">t</em>, and <em class="emphasis">R</em><sub class="subscript"><em class="emphasis">t</em></sub> is the real interest factor from the current period to period <em class="emphasis">t</em>. Then the price of the asset is given by</p>
+    <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0025" display="block"><semantics><mtable><mtr><mtd> <maligngroup></maligngroup><mtext>price</mtext><malignmark></malignmark><mtext> =</mtext><malignmark></malignmark><mtext> </mtext> </mtd> </mtr><mtr><mtd> <maligngroup></maligngroup><mfrac><mrow><mtext>dividend in year 1</mtext> </mrow><mrow><mtext> 1-period real interest factor</mtext> </mrow> </mfrac><mtext> +</mtext> </mtd> </mtr><mtr><mtd> <maligngroup></maligngroup><malignmark></malignmark><mfrac><mrow><mtext>dividend in year 2</mtext> </mrow><mrow><mtext>2-period real interest factor</mtext> </mrow> </mfrac><mtext> + </mtext><mn>...</mn><mtext> +</mtext><mfrac><mrow><mtext>dividend in year T</mtext> </mrow><mrow><mtext> T-period real interest factor</mtext> </mrow> </mfrac> </mtd> </mtr> </mtable>  </semantics></math></span>
+    <p class="para editable block" id="cooperecon-ch10_s06_p04">or</p>
+    <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0026" display="block"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac><mrow><msub><mi>D</mi><mn>1</mn> </msub> </mrow><mrow><msub><mi>R</mi><mn>1</mn> </msub> </mrow> </mfrac><mo>+</mo><mfrac><mrow><msub><mi>D</mi><mn>2</mn> </msub> </mrow><mrow><msub><mi>R</mi><mn>2</mn> </msub> </mrow> </mfrac><mn>...</mn><mo>+</mo><mfrac><mrow><msub><mi>D</mi><mi>T</mi> </msub> </mrow><mrow><msub><mi>R</mi><mi>T</mi> </msub> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+    <p class="para editable block" id="cooperecon-ch10_s06_p05">All we did was to divide the dividends (<em class="emphasis">D</em>) due in period <em class="emphasis">t</em> by the interest factor <em class="emphasis">R</em><sub class="subscript"><em class="emphasis">t</em></sub> and then add them together.</p>
+    <p class="para editable block" id="cooperecon-ch10_s06_p06">If interest rates are constant over time, then the interest factors are easy to determine. Suppose that the annual real interest rate for one year is <em class="emphasis">r</em>. Then <em class="emphasis">R</em><sub class="subscript">1</sub> = (1 + <em class="emphasis">r</em>) because this is the factor we would use to discount from next year to the present. What about discounting dividends two periods from now? To discount <em class="emphasis">D</em><sub class="subscript">2</sub> to period 1, we would divide by (1 + <em class="emphasis">r</em>). To discount that back again to the current period we would again divide by (1 + <em class="emphasis">r</em>). So to discount <em class="emphasis">D</em><sub class="subscript">2</sub> to the present we divide <em class="emphasis">D</em><sub class="subscript">2</sub> by (1 + <em class="emphasis">r</em>) × (1 + <em class="emphasis">r</em>) = (1 + <em class="emphasis">r</em>)<sup class="superscript">2</sup>. That is, <em class="emphasis">R</em><sub class="subscript">2</sub> = (1 + <em class="emphasis">r</em>)<sup class="superscript">2</sup>. In general, <em class="emphasis">R</em><sub class="subscript"><em class="emphasis">t</em></sub> = (1 + <em class="emphasis">r</em>)<sup class="superscript"><em class="emphasis">t</em></sup> when interest rates are constant.</p>
+    <p class="para editable block" id="cooperecon-ch10_s06_p07">If real interest rates are not constant over time, the calculation of <em class="emphasis">R</em><sub class="subscript"><em class="emphasis">t</em></sub> is more tedious. If <em class="emphasis">R</em><sub class="subscript">1</sub> = (1 + <em class="emphasis">r</em><sub class="subscript">1</sub>), then <em class="emphasis">R</em><sub class="subscript">2</sub> = (1 + <em class="emphasis">r</em><sub class="subscript">1</sub>) × (1 + <em class="emphasis">r</em><sub class="subscript">2</sub>), where <em class="emphasis">r</em><sub class="subscript">2</sub> is the real interest rate between period 1 and period 2. In the calculation of <em class="emphasis">R</em><sub class="subscript">2</sub>, you can think of (1 + <em class="emphasis">r</em><sub class="subscript">2</sub>) as discounting the flow from period 2 to period 1 and then (1 + <em class="emphasis">r</em><sub class="subscript">1</sub>) as discounting the flow from period 1 to period 0.</p>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-05-end-of-chapter-material.html"><img src="shared/images/batch-left.png"></a> <a href="s14-05-end-of-chapter-material.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s15-00-raising-the-wage-floor.html">Next Section</a> <a href="s15-00-raising-the-wage-floor.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

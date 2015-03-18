@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Correcting for Inflation</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-07-expected-value.html"><img src="shared/images/batch-left.png"></a> <a href="s35-07-expected-value.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-09-supply-and-demand.html">Next Section</a> <a href="s35-09-supply-and-demand.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s08" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.8</span> Correcting for Inflation</h2>
+    <p class="para editable block" id="cooperecon-ch31_s08_p01">If you have some data expressed in nominal terms (for example, in dollars), and you want to convert them to real terms, you should use the following four steps.</p>
+    <ol class="orderedlist editable block" id="cooperecon-ch31_s08_l01">
+        <li>Select your deflator. In most cases, the Consumer Price Index (CPI) is the best deflator to use. You can find data on the CPI (for the United States) at the Bureau of Labor Statistics website (<a class="link" target="_blank" href="http://www.bls.gov">http://www.bls.gov</a>).</li>
+        <li>Select your base year. Find the value of the index in that base year.</li>
+        <li>For all years (including the base year), divide the value of the index in that year by the value in the base year. The value for the base year is 1.</li>
+        <li>For each year, divide the value in the nominal data series by the number you calculated in step 3. This gives you the value in “base year dollars.”</li>
+    </ol>
+    <p class="para editable block" id="cooperecon-ch31_s08_p02"><a class="xref" href="#cooperecon-ch31_s08_t01">Table 31.2 "Correcting Nominal Sales for Inflation"</a> shows an example. We have data on the CPI for three years, as listed in the second column. The price index is created using the year 2000 as a base year, following steps 1–3. Sales measured in millions of dollars are given in the fourth column. To correct for inflation, we divide sales in each year by the value of the price index for that year. The results are shown in the fifth column. Because there was inflation each year (the price index is increasing over time), real sales do not increase as rapidly as nominal sales.</p>
+    <div class="table block" id="cooperecon-ch31_s08_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.2</span> Correcting Nominal Sales for Inflation</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>CPI</th>
+                    <th>Price Index (2000 Base)</th>
+                    <th>Sales (Millions)</th>
+                    <th>Real Sales (Millions of Year 2000 Dollars)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2000</td>
+                    <td>172.2</td>
+                    <td>1.0</td>
+                    <td>21.0</td>
+                    <td>21.0</td>
+                </tr>
+                <tr>
+                    <td>2001</td>
+                    <td>177.1</td>
+                    <td>1.03</td>
+                    <td>22.3</td>
+                    <td>21.7</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>179.9</td>
+                    <td>1.04</td>
+                    <td>22.9</td>
+                    <td>21.9</td>
+                </tr>
+            </tbody>
+        </table>
+            <div class="copyright">
+            <p class="para">Source: Bureau of Labor Statistics for the Consumer Price Index</p>
+        </div>
+    </div>
+    <p class="para editable block" id="cooperecon-ch31_s08_p03">This calculation uses the CPI, which is an example of a price index. To see how a price index like the CPI is constructed, consider <a class="xref" href="#cooperecon-ch31_s08_t02">Table 31.3 "Constructing a Price Index"</a>, which shows a very simple economy with three goods: T-shirts, music downloads, and meals. The prices and quantities purchased in the economy in 2012 and 2013 are summarized in the table.</p>
+    <div class="table block" id="cooperecon-ch31_s08_t02" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.3</span> Constructing a Price Index</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th colspan="2">T-shirts</th>
+                    <th colspan="2">Music Downloads</th>
+                    <th colspan="2">Meals</th>
+                    <th>Cost of 2013 Basket</th>
+                    <th>Price Index</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>Price ($)</td>
+                    <td>Quantity</td>
+                    <td>Price ($)</td>
+                    <td>Quantity</td>
+                    <td>Price ($)</td>
+                    <td>Quantity</td>
+                    <td>Price ($)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>1</td>
+                    <td>50</td>
+                    <td>25</td>
+                    <td>6</td>
+                    <td>425</td>
+                    <td>1.00</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>22</td>
+                    <td>12</td>
+                    <td>0.80</td>
+                    <td>60</td>
+                    <td>26</td>
+                    <td>5</td>
+                    <td>442</td>
+                    <td>1.04</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="cooperecon-ch31_s08_p04">To construct a price index, you must choose a fixed basket of goods. For example, we could use the goods purchased in 2013 (12 T-shirts, 60 downloads, and 5 meals). This fixed basket is then priced in different years. To construct the cost of the 2013 basket at 2013 prices, the product of the price and the quantity purchased for each good in 2013 is added together. The basket costs $442. Then we calculate the cost of the 2013 basket at 2012 prices: that is, we use the prices of each good in 2012 and the quantities purchased in 2013. The sum is $425. The price index is constructed using 2012 as a base year. The value of the price index for 2013 is the cost of the basket in 2013 divided by its cost in the base year (2012).</p>
+    <p class="para editable block" id="cooperecon-ch31_s08_p05">When the price index is based on a bundle of goods that represents total output in an economy, it is called the <strong class="emphasis bold">price level</strong>. The CPI and <em class="emphasis">gross domestic product (GDP) deflator</em> are examples of measures of the price level (they differ in terms of exactly which goods are included in the bundle). The growth rate of the price level (its percentage change from one year to the next) is called the <strong class="emphasis bold">inflation rate</strong>.</p>
+    <p class="para editable block" id="cooperecon-ch31_s08_p06">We also correct interest rates for inflation. The interest rates you typically see quoted are in nominal terms: they tell you how many dollars you will have to repay for each dollar you borrow. This is called a <strong class="emphasis bold">nominal interest rate</strong>. The <strong class="emphasis bold">real interest rate</strong> tells you how much you will get next year, in terms of goods and services, if you give up a unit of goods and services this year. To correct interest rates for inflation, we use the <strong class="emphasis bold">Fisher equation</strong>:</p>
+    <span class="informalequation block"><span class="mathphrase">real interest rate ≈ nominal interest rate − inflation rate.</span></span>
+    <p class="para editable block" id="cooperecon-ch31_s08_p07">For more details, see <a class="xref" href="cooperecon-ch31_s25#cooperecon-ch31_s25">Section 31.25 "The Fisher Equation: Nominal and Real Interest Rates"</a> on the Fisher equation.</p>
+    <div class="section" id="cooperecon-ch31_s08_s01">
+        <h2 class="title editable block">Key Insights</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s08_s01_l01">
+            <li>Divide nominal values by the price index to create real values.</li>
+            <li>Create the price index by calculating the cost of buying a fixed basket in different years.</li>
+        </ul>
+    </div>
+    <div class="section" id="cooperecon-ch31_s08_s02">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s08_s02_l01">
+            <li><a class="xref" href="cooperecon-ch18#cooperecon-ch18">Chapter 18 "The State of the Economy"</a></li>
+            <li><a class="xref" href="cooperecon-ch19#cooperecon-ch19">Chapter 19 "The Interconnected Economy"</a></li>
+            <li><a class="xref" href="cooperecon-ch20#cooperecon-ch20">Chapter 20 "Globalization and Competitiveness"</a></li>
+            <li><a class="xref" href="cooperecon-ch24#cooperecon-ch24">Chapter 24 "Money: A User’s Guide"</a></li>
+            <li><a class="xref" href="cooperecon-ch26#cooperecon-ch26">Chapter 26 "Inflations Big and Small"</a></li>
+            <li><a class="xref" href="cooperecon-ch27#cooperecon-ch27">Chapter 27 "Income Taxes"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-07-expected-value.html"><img src="shared/images/batch-left.png"></a> <a href="s35-07-expected-value.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-09-supply-and-demand.html">Next Section</a> <a href="s35-09-supply-and-demand.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

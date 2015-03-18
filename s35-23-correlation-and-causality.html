@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Correlation and Causality</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-22-mean-and-variance.html"><img src="shared/images/batch-left.png"></a> <a href="s35-22-mean-and-variance.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-24-the-credit-loan-market-macro.html">Next Section</a> <a href="s35-24-the-credit-loan-market-macro.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s23" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.23</span> Correlation and Causality</h2>
+    <p class="para editable block" id="cooperecon-ch31_s23_p01">Correlation is a statistical measure describing how two variables move together. In contrast, causality (or causation) goes deeper into the relationship between two variables by looking for cause and effect.</p>
+    <p class="para editable block" id="cooperecon-ch31_s23_p02">Correlation is a statistical property that summarizes the way in which two variables move either over time or across people (firms, governments, etc.). The concept of correlation is quite natural to us, as we often take note of how two variables interrelate. If you think back to high school, you probably have a sense of how your classmates did in terms of two measures of performance: grade point average (GPA) and the results on a standardized college entrance exam (SAT or ACT). It is likely that classmates with high GPAs also had high scores on the SAT or ACT exam. In this instance, we would say that the GPA and SAT/ACT scores were positively correlated: looking across your classmates, when a person’s GPA is higher than average, that person’s SAT or ACT score is likely to be higher than average as well.</p>
+    <p class="para editable block" id="cooperecon-ch31_s23_p03">As another example, consider the relationship between a household’s income and its expenditures on housing. If you conducted a survey across households, it is likely that you would find that richer households spend more on most goods and services, including housing. In this case, we would conclude that income and expenditures on housing are positively correlated.</p>
+    <p class="para editable block" id="cooperecon-ch31_s23_p04">When economists look at data for a whole economy, they often focus on a measure of how much is produced, which we call real gross domestic product (real GDP), and the fraction of workers without jobs, called the unemployment rate. Over long periods of time, when GDP is above average (the economy is doing well), the unemployment rate is below average. In this case, GDP and the unemployment rate are negatively correlated, as they tend to move in opposite directions.</p>
+    <p class="para editable block" id="cooperecon-ch31_s23_p05">The fact that one variable is correlated with another does not inform us about whether one variable <em class="emphasis">causes</em> the other. Imagine yourself on an airplane in a relaxed mood, reading or listening to music. Suddenly, the pilot comes on the public address system and requests that you buckle your seat belts. Usually, such a request is followed by turbulence. This is a correlation: the announcement by the pilot is positively correlated with air turbulence. The correlation is of course not perfect because sometimes you hit some bumps without warning, and sometimes the pilot’s announcement is not followed by turbulence.</p>
+    <p class="para editable block" id="cooperecon-ch31_s23_p06">But—obviously—this does not mean that we could solve the turbulence problem by turning off the public address system. The pilot’s announcement does not <em class="emphasis">cause</em> the turbulence. The turbulence is there whether the pilot announces it or not. In fact, the causality runs the other way. The turbulence causes the pilot’s announcement.</p>
+    <p class="para editable block" id="cooperecon-ch31_s23_p07">We noted earlier that real GDP and unemployment are negatively correlated. When real GDP is below average, as it is during a recession, the unemployment rate is typically above average. But what is the causality here? If unemployment caused recessions, we might be tempted to adopt a policy that makes unemployment illegal. For example, the government could fine firms if they lay off workers. This is not a good policy because we do not think that low unemployment causes high real GDP. Neither do we necessarily think that high real GDP causes low unemployment. Instead, based on economic theory, there are other influences that affect both real GDP and unemployment.</p>
+    <div class="section" id="cooperecon-ch31_s23_s01">
+        <h2 class="title editable block">More Formally</h2>
+        <p class="para editable block" id="cooperecon-ch31_s23_s01_p01">Suppose you have <em class="emphasis">N</em> observations of two variables, <em class="emphasis">x</em> and <em class="emphasis">y</em>, where <em class="emphasis">x</em><sub class="subscript"><em class="emphasis">i</em></sub> and <em class="emphasis">y</em><sub class="subscript"><em class="emphasis">i</em></sub> are the values of these variables in observation <em class="emphasis">i</em> = 1, 2,…, <em class="emphasis">N.</em> The mean of <em class="emphasis">x</em>, denoted μ<sub class="subscript"><em class="emphasis">x</em></sub>, is the sum over the values of <em class="emphasis">x</em> in the sample is divided by <em class="emphasis">N</em>; the scenario applies for <em class="emphasis">y</em>.</p>
+        <span class="informalequation block"><math xml:id="cooperecon-29_m008" display="block"><semantics><mrow><msub><mi>μ</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>x</mi><mi>N</mi></msub></mrow><mi>N</mi></mfrac></mrow></semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch31_s23_s01_p02">and</p>
+        <span class="informalequation block"><math xml:id="cooperecon-29_m009" display="block"><semantics><mrow><msub><mi>μ</mi><mi>y</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub><mo>+</mo><mn>...</mn><mo>+</mo><msub><mi>y</mi><mi>N</mi></msub></mrow><mi>N</mi></mfrac><mo>.</mo></mrow></semantics></math></span>
+        <p class="para block" id="cooperecon-ch31_s23_s01_p03">We can also calculate the variance and standard deviations of <em class="emphasis">x</em> and <em class="emphasis">y</em>. The calculation for the variance of <em class="emphasis">x</em>, denoted <span class="inlineequation"><math xml:id="cooperecon-29_m010" display="inline"><semantics><mrow><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup><mo>,</mo></mrow></semantics></math></span> is as follows:</p>
+        <span class="informalequation block"><math display="block" xml:id="cooperecon_mml_m14"><semantics><mrow><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>...</mn><mtext> </mtext><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>N</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mi>N</mi></mfrac><mo>.</mo></mrow></semantics></math></span>
+        <p class="para block" id="cooperecon-ch31_s23_s01_p04">The standard deviation of <em class="emphasis">x</em> is the square root of <span class="inlineequation"><math xml:id="cooperecon-29_m012" display="inline"><semantics><mrow><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup><mtext>:</mtext></mrow></semantics></math></span></p>
+        <span class="informalequation block"><math display="block" xml:id="cooperecon_mml_m15"><semantics><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>...</mn><mtext> </mtext><msup><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>N</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mi>N</mi></mfrac></mrow></msqrt><mo>.</mo></mrow></semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch31_s23_s01_p05">With these ingredients, the correlation of (<em class="emphasis">x</em>,<em class="emphasis">y</em>), denoted corr(<em class="emphasis">x</em>,<em class="emphasis">y</em>), is given by</p>
+        <span class="informalequation block"><math xml:id="cooperecon-29_m014" display="block"><semantics><mrow><mtext>corr</mtext><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>y</mi></msub><mo stretchy="false">)</mo><mo>+</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub><mi>y</mi><mn>2</mn></msub><mo>−</mo><msub><mi>μ</mi><mi>y</mi></msub><mo stretchy="false">)</mo><mo>+</mo><mn>...</mn><mtext> </mtext><mo stretchy="false">(</mo><msub><mi>x</mi><mi>N</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>x</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><msub><mi>y</mi><mi>N</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>N</mi><msub><mi>σ</mi><mi>x</mi></msub><msub><mi>σ</mi><mi>y</mi></msub></mrow></mfrac><mo>.</mo></mrow></semantics></math></span>
+    </div>
+    <div class="section" id="cooperecon-ch31_s23_s02">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s23_s02_l01">
+            <li><a class="xref" href="cooperecon-ch22#cooperecon-ch22">Chapter 22 "The Great Depression"</a></li>
+            <li><a class="xref" href="cooperecon-ch26#cooperecon-ch26">Chapter 26 "Inflations Big and Small"</a></li>
+            <li><a class="xref" href="cooperecon-ch29#cooperecon-ch29">Chapter 29 "Balancing the Budget"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-22-mean-and-variance.html"><img src="shared/images/batch-left.png"></a> <a href="s35-22-mean-and-variance.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-24-the-credit-loan-market-macro.html">Next Section</a> <a href="s35-24-the-credit-loan-market-macro.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

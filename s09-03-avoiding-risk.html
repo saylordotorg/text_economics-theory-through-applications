@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Avoiding Risk</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-02-using-discounted-present-value.html"><img src="shared/images/batch-left.png"></a> <a href="s09-02-using-discounted-present-value.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s09-04-embracing-risk.html">Next Section</a> <a href="s09-04-embracing-risk.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch05_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">5.3</span> Avoiding Risk</h2>
+    <div class="learning_objectives editable block" id="cooperecon-ch05_s03_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="cooperecon-ch05_s03_l01">
+            <li>What is the definition of probability?</li>
+            <li>How can I calculate an expected value?</li>
+            <li>What is risk aversion?</li>
+            <li>How do individuals and firms deal with risk?</li>
+            <li>How does insurance work?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="cooperecon-ch05_s03_p02">In life, there are many uncertainties. So far, we have ignored them all, but you will have to face them. In our various discussions of discounted present value, we pretended that you knew your future income—and your future tastes—with certainty. In real life, we must decide how much to save without knowing for sure what our future income will be. We must pick a career without knowing how much we will enjoy different jobs or how much they will pay. We must decide whether or not to go to college without knowing what kind of job we will be able to get, and so on. How can we deal with all these uncertainties?</p>
+    <p class="para editable block" id="cooperecon-ch05_s03_p03">Some of the uncertainties we face are forced on us with no choice of our own, such as the following:</p>
+    <ul class="itemizedlist editable block" id="cooperecon-ch05_s03_l02">
+        <li>Accidents involving you, your automobile, your house, and so on</li>
+        <li>Layoffs resulting in spells of unemployment</li>
+        <li>Your health</li>
+    </ul>
+    <p class="para editable block" id="cooperecon-ch05_s03_p04">As you know, one way to deal with these uncertain events is through insurance. Insurance is a way of trying to remove some of the risk that we face. We explain how it works later in this section.</p>
+    <p class="para editable block" id="cooperecon-ch05_s03_p05">Other risks are more under our control. We accept jobs that entail certain risks. We drive our cars even though we know that there is a risk of accident. We put our savings into risky stocks rather than safe assets. In these cases, we trade off these risks against other benefits. We drive faster, accepting the greater risk of accident to save time. Or we take a risky job because it pays well.</p>
+    <p class="para editable block" id="cooperecon-ch05_s03_p06">There are yet other kinds of risk that we actually seek out rather than avoid. We play poker or bet on sporting events. We climb mountains, go skydiving, and engage in extreme sports. In these cases, the risks are apparently something good that we seek out, rather than something bad that we avoid.</p>
+    <div class="section" id="cooperecon-ch05_s03_s01">
+        <h2 class="title editable block">Risk and Uncertainty</h2>
+        <p class="para editable block" id="cooperecon-ch05_s03_s01_p01">Let us begin by making sure we understand what risk and uncertainty mean. (Here we will use the terms more or less interchangeably, although people sometimes reserve the term <em class="emphasis">uncertainty</em> for cases where it is hard to quantify the risks that we face.) Probably the simplest example of risk is familiar to us all: the toss of a coin. Imagine flipping a coin five times. Each time, the outcome will be either a head or a tail. <a class="xref" href="#cooperecon-ch05_s03_s01_t01">Table 5.8 "Coin-Flipping Experiment"</a> shows an example of such an experiment. In this experiment, the outcome was three heads and two tails. For each flip of the coin, there was uncertainty about the outcome. We did not know ahead of time whether there would be heads or tails. The outcome reported in <a class="xref" href="#cooperecon-ch05_s03_s01_t01">Table 5.8 "Coin-Flipping Experiment"</a> is only one example. If you were to carry out this experiment right now, you would almost certainly end up with a different outcome.</p>
+        <div class="table block" id="cooperecon-ch05_s03_s01_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 5.8</span> Coin-Flipping Experiment</p>
+            <table cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>Flip</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Outcome</td>
+                        <td>Heads</td>
+                        <td>Heads</td>
+                        <td>Tails</td>
+                        <td>Heads</td>
+                        <td>Tails</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="cooperecon-ch05_s03_s01_p02">Coin tosses are special because the flips of the coin are <em class="emphasis">independent</em> of each other (that is, the history of previous tosses has no effect on the current toss of a coin). In <a class="xref" href="#cooperecon-ch05_s03_s01_t01">Table 5.8 "Coin-Flipping Experiment"</a>, the coin was not more likely to come up tails on the third toss because the previous tosses were both heads. Even if you have 100 heads in a row, this does not affect the outcome of the 101st toss of the coin. If you think that the coin is “fair,” meaning that heads and tails are equally likely, then the 101st toss is still just as likely to be heads as tails. By contrast, the likelihood that it will be raining an hour from now is not independent of whether or not it is raining at this moment.</p>
+    </div>
+    <div class="section" id="cooperecon-ch05_s03_s02">
+        <h2 class="title editable block">Financial Risk and Expected Value</h2>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p01">Some of the risks that we confront are nonfinancial. An example of nonfinancial uncertainty is the risk that you might break your ankle playing basketball or the possibility that your favorite sporting team will win a big game and make you happy. Here, we will focus on financial uncertainty, by which we mean situations where there is money at stake. In other words, we are thinking about risks where you can measure the implications in monetary terms. An obvious example is the money you could win or lose from buying a lottery ticket or playing poker. Another is the money you would have to pay for repairs or medical expenses following a car accident. Another is the gains or losses from buying stocks, government bonds, or other financial assets. Another is the income you would lose if you were laid off from your job.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p02">When we evaluate risky situations, we must have a way of describing the kinds of gambles that we confront. In general, we do this by listing all the possible outcomes together with the likelihood of each outcome. For example, <a class="xref" href="#cooperecon-ch05_s03_s02_t01">Table 5.9 "Outcomes and Probabilities from a Coin Toss"</a> lists the outcomes and the <span class="margin_term"><a class="glossterm">probability</a><span class="glossdef">The percentage chance that an outcome will occur.</span></span> (that is, the likelihood of each outcome) for the experiment of tossing a coin one time.</p>
+        <div class="table block" id="cooperecon-ch05_s03_s02_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 5.9</span> Outcomes and Probabilities from a Coin Toss</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Outcome</th>
+                        <th>Probability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Heads</td>
+                        <td><span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-cooperecon-05_m0018" display="inline"><semantics><mrow> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> </mrow>  </semantics></math></span></td>
+                    </tr>
+                    <tr>
+                        <td>Tails</td>
+                        <td><span class="inlineequation"><math xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="fwk-cooperecon-05_m0019" display="inline"><semantics><mrow> <mfrac> <mn>1</mn> <mn>2</mn> </mfrac> </mrow>  </semantics></math></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="callout block" id="cooperecon-ch05_s03_s02_n01">
+            <h3 class="title"></h3>
+            <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s07#cooperecon-ch31_s07" xrefstyle="select:title">Section 31.7 "Expected Value"</a></p>
+            <p class="para" id="cooperecon-ch05_s03_s02_p03">Probability is the percentage chance that something will occur. For example, there is a 50 percent chance that a tossed coin will come up heads. We say that the probability of getting the <em class="emphasis">outcome</em> “heads” is 0.5.</p>
+            <p class="para" id="cooperecon-ch05_s03_s02_p04">There are five things to know about probability:</p>
+            <ol class="orderedlist" id="cooperecon-ch05_s03_s02_l01">
+                <li>The list of outcomes must be complete.</li>
+                <li>The list of outcomes must not overlap.</li>
+                <li>If an outcome is certain to occur, it has probability of 1.</li>
+                <li>If an outcome is certain <em class="emphasis">not</em> to occur, it has probability of 0.</li>
+                <li>If we add the probabilities for all the possible outcomes, the total must equal 1.</li>
+            </ol>
+        </div>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p05">Think about rolling a normal six-sided die one time and describing outcomes and probabilities.</p>
+        <ul class="itemizedlist editable block" id="cooperecon-ch05_s03_s02_l02">
+            <li>We must make sure that we include every outcome. We cannot list as possible outcomes “less than or equal to 2” and “greater than or equal to 4.” Such a list ignores the possibility of rolling a 3.</li>
+            <li>We cannot list as possible outcomes “less than or equal to 4” and “greater than or equal to 3.” These categories overlap because a roll of a 3 or a 4 would show up in both categories.</li>
+            <li>The outcome “less than or equal to 6” has a probability of 1 because it is certain.</li>
+            <li>The outcome “9” has a probability of 0.</li>
+            <li>Provided we have a complete list of outcomes (for example “less than or equal to 4” and “greater than or equal to 5”), the probabilities of all the outcomes will always sum to 1. (In this case, the probability of the first outcome is 2/3, and the probability of the second outcome is 1/3.)</li>
+        </ul>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p06">Now suppose you are playing a gambling game based on a toss of a coin. If the coin comes up heads, you win $1. If it comes up tails, you win $0. When we look at a situation such as this, we are often interested in how much you would get, on average, if you played the game many times. In this example, it is easy to guess the answer. On average, you would expect to win half the time, so half the time you get $1, and half the time you get nothing. We say that the <span class="margin_term"><a class="glossterm">expected value</a><span class="glossdef">The measure of how much you would expect to win (or lose) on average, if the situation were to be replayed a large number of times.</span></span> of each flip of the coin is 50 cents.</p>
+        <div class="callout block" id="cooperecon-ch05_s03_s02_n02">
+            <h3 class="title"></h3>
+            <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s07#cooperecon-ch31_s07" xrefstyle="select:title">Section 31.7 "Expected Value"</a></p>
+            <p class="para" id="cooperecon-ch05_s03_s02_p07">The expected value of a situation with financial risk is the measure of how much you would expect to win (or lose) on average, if the situation were to be replayed a large number of times. Expected value is calculated as follows:</p>
+            <ol class="orderedlist" id="cooperecon-ch05_s03_s02_l03">
+                <li>For each outcome, multiply the probability of that outcome by the amount you will receive.</li>
+                <li>Add these amounts over all the possible outcomes.</li>
+            </ol>
+        </div>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p08"><a class="xref" href="#cooperecon-ch05_s03_s02_t02">Table 5.10 "Outcomes and Probabilities from Investment in Internet Venture"</a> gives another example of expected value. Suppose a friend is planning on establishing a small Internet business and asks you to invest $1,000. He tells you (and you believe him) that there is a 50 percent chance that the business will fail, so you will lose your money. There is a 40 percent chance that the business will just break even, so you will get your $1,000 back but nothing more. And there is a 10 percent chance that the business will be very successful, so you will earn $16,000.</p>
+        <div class="table block" id="cooperecon-ch05_s03_s02_t02" frame="all">
+            <p class="title"><span class="title-prefix">Table 5.10</span> Outcomes and Probabilities from Investment in Internet Venture</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Outcome</th>
+                        <th>Probability</th>
+                        <th>Amount You Will Receive ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Failure</td>
+                        <td>0.5</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Break even</td>
+                        <td>0.4</td>
+                        <td>1,000</td>
+                    </tr>
+                    <tr>
+                        <td>Success</td>
+                        <td>0.1</td>
+                        <td>16,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p09">In this case, the expected value of the investment is given by the following:</p>
+        <span class="informalequation block"><span class="mathphrase">expected value = (0.5 × $0) + (0.4 × $1,000) + (0.1 × $16,000) = $2,000.</span></span>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p10">Thus for your investment of $1,000, you could expect to get $2,000 back on average. This seems like a good investment. It is important to remember, though, what “on average” means. You will never actually <em class="emphasis">get</em> $2,000. You will receive either $16,000, $1,000, or nothing. Even though this is a good investment on average, you might still decide that you don’t want any part of it. Yes, you might get the big net gain of $15,000. But there’s also a 50 percent chance that you will be out $1,000. The gamble might seem too risky for you.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p11">Coin tosses are special because it is relatively easy to determine the probability of a head or a tail. This is not the case for all the types of uncertainty you might face. In some cases, financial instruments—such as the mortgage-backed securities that played a big role in the financial crisis of 2007–2009—are so complex that investors find it difficult to assess the probabilities of various outcomes.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s02_p12">We often do a bad job of <em class="emphasis">estimating</em> probabilities. One reason for this is because we are unduly influenced by things that we can easily bring to mind. Psychologists call this the “availability heuristic.” For example, we tend to overestimate certain causes of death, such as car accidents, tornadoes, and homicides, and underestimate others, such as diabetes, stroke, and asthma.<span class="footnote" id="fwk-cooperecon-fn05_010">See Paul Slovic, Baruch Fischoff, and Sarah Lichtenstein, “Facts versus Fears: Understanding Perceived Risk,” in <em class="emphasis">Judgment under Uncertainty: Heuristics and Biases</em>, ed. Daniel Kahneman, Paul Slovic, and Amos Tversky (Cambridge, MA: Cambridge University Press, 1982), 463–89.</span> We also often do a poor job at <em class="emphasis">using</em> probabilities; in particular, we often put too much emphasis on small probabilities. For example, consider two drugs that are equally effective in treating a disease, but suppose the older drug has a 1 in 10 million chance of having a certain side effect and the newer drug has a 1 in a 100 million chance of having the same side effect. Consumers might view the new drug as much more appealing, even though the side effect was already highly improbable with the older drug.</p>
+    </div>
+    <div class="section" id="cooperecon-ch05_s03_s03">
+        <h2 class="title editable block">Diversification of Risk</h2>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p01">In many cases, we would like to find some way of getting rid of—at least to some degree—the risks that we face. One way we eliminate risk is through insurance. Sometimes we purchase insurance on the market. Sometimes our employer provides us with insurance. Sometimes the government provides us with insurance. In the following subsections, we look at many different kinds of insurance, including property insurance, unemployment insurance, and deposit insurance.<span class="footnote" id="fwk-cooperecon-fn05_011">We do not discuss health insurance here. In <a class="xref" href="cooperecon-ch16#cooperecon-ch16">Chapter 16 "A Healthy Economy"</a>, we discuss the provision of health care and the problems of health insurance in detail.</span></p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p02">First, though, we need to understand how and why insurance works. Suppose you have a bicycle worth $1,000, and (for some reason) you cannot purchase insurance. You think that, in any given year, there is about a 1 percent chance that your bike will have to be replaced (because it is either stolen or written off in an accident).</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p03">Now, in expected value terms, this may not look too bad. Your expected loss from an accident is $0.01 × $1,000 = $10. So on average, you can expect to lose $10 a year. But the problem is that, if you are unlucky, you are stuck with a very big expense. Most of us dislike this kind of risk.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p04">You are complaining about this to a friend, and she sympathizes, saying that she faces exactly (and we mean exactly) the same problem. She also has a bike worth $1,000 and thinks there is a 1 percent chance each year that she will need to replace it. And that’s when you have the brilliant idea. <em class="emphasis">You can make an agreement that, if either one of you has to replace your bikes, you will share the costs</em>. So if you have to replace your bike, she will pay $500 of your costs, and if she has to replace her bike, then you will pay $500 of her costs. It is (almost exactly) twice as likely that you will have to pay <em class="emphasis">something</em>, but if you do, you will only have to pay half as much. With this scheme, your expected loss is unchanged. But you and your friend prefer this scheme because it is less risky; it is much less likely that you will have to make the big $1,000 payout.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p05">We are implicitly assuming here that your chances of having to replace your bike are independent of the chance that she will have to replace her bike. (If you are likely to crash into her, or both of your bikes are stolen, then it is a different story.) There is also still a chance that you will both experience the unlucky 1-in-100 chance, in which case you would both still have to pay $1,000. But the likelihood of this happening is now tiny. (To be precise, the probability of both of you having an accident in the same year is 1 in 10,000 [that is, 0.0001]). This is because the probability that two independent events occur equals the probability of one multiplied by the probability of the other.)</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p06">But why stop here? If you can find two more friends with the same problem, then you can make it almost certain that you will have to pay out no more than $250. It is true that you would be even more likely to have to make a payment because you will have to pay if you or one of your friends has to replace his or her bike. But because the payment is now being shared four ways, you will have to pay only 25 percent of the expenses. This is an example of <span class="margin_term"><a class="glossterm">diversification</a><span class="glossdef">The insight that underlies insurance in which people can share their risks.</span></span>, which is the insight that underlies insurance: people share their risks, so it is less likely that any single individual will face a large loss.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p07">Diversification and insurance don’t prevent bad stuff from happening. We live in a world where bicycles are stolen; where houses are destroyed by floods, fires, or storms; where people have accidents or become ill; and so on. There is not a lot we can do about the fact that bad things happen. But we can make the consequences of these bad things easier to deal with. Insurance is a means of sharing—diversifying—these risks.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p08">Continuing with our bicycle insurance example, suppose you could find thousands of friends who would agree to be part of this arrangement. As more and more people join the scheme, it becomes increasingly likely that you have to make a payment each year, but the amount you would have to pay becomes smaller and smaller. With a very large number of people, you would end up very close to a situation where you pay out $10 with certainty each year. Of course, organizing thousands of your friends into such a scheme would present all sorts of practical problems. This is where insurance companies come in.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p09">Insurance companies charge you a premium (an annual payment). In return, they promise to pay you an <span class="margin_term"><a class="glossterm">indemnity</a><span class="glossdef">In an insurance contract, a value equal to the full amount of the loss minus the deductible.</span></span> in the event you suffer a loss. The indemnity is usually not the full amount of the loss. The part of the loss that is not covered is called the <span class="margin_term"><a class="glossterm">deductible</a><span class="glossdef">In an insurance contract, the value not covered in the event of a loss.</span></span>. In our example, there is no deductible, and the indemnity is $1,000. An insurance company would charge you a premium equal to the expected loss of $10 plus a little extra. The extra payment is how the insurance company makes money. You and everyone else are willing to pay this extra amount in return for the removal of risk.</p>
+        <p class="para editable block" id="cooperecon-ch05_s03_s03_p10">The idea of diversification can also be applied to investment.<span class="footnote" id="fwk-cooperecon-fn05_012">We discuss this in <a class="xref" href="cooperecon-ch10#cooperecon-ch10">Chapter 10 "Making and Losing Money on Wall Street"</a>.</span> Think back to our example of your friend with the Internet venture. You might not want to invest $1,000 in his scheme because it seems too risky. But if you had 100 friends with 100 similar (but independent) schemes, you might be willing to invest $10 in each. Again, you would be diversifying your risk.</p>
+        <div class="section" id="cooperecon-ch05_s03_s03_s01">
+            <h2 class="title editable block">Risk Aversion</h2>
+            <p class="para editable block" id="cooperecon-ch05_s03_s03_s01_p01">The preceding discussion of insurance and diversification is based on the presumption that people typically wish to avoid risk whenever possible. In our example, you have a 1 percent chance of suffering a $1,000 loss. Your expected loss is therefore $10. Now imagine we give you a choice between this gamble and a certain loss of $10. If you are just as happy in either case, then we say you are <span class="margin_term"><a class="glossterm">risk-neutral</a><span class="glossdef">Being willing to pay only the expected loss from a gamble.</span></span>. But if you are like most people, then you would prefer a certain loss of $10 to the gamble whereby you have a 1 percent chance of losing $1,000. In that case, you are <span class="margin_term"><a class="glossterm">risk-averse</a><span class="glossdef">Being willing to pay more than a gamble’s expected loss in order to avoid that gamble.</span></span>.</p>
+            <div class="callout block" id="cooperecon-ch05_s03_s03_s01_n01">
+                <h3 class="title"></h3>
+                <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s07#cooperecon-ch31_s07" xrefstyle="select:title">Section 31.7 "Expected Value"</a></p>
+                <p class="para" id="cooperecon-ch05_s03_s03_s01_p02">Suppose you are presented with the following gamble:</p>
+                <ul class="itemizedlist" id="cooperecon-ch05_s03_s03_s01_l01">
+                    <li>Lose nothing (99 percent probability)</li>
+                    <li>Lose $1,000 (1 percent probability)</li>
+                </ul>
+                <p class="para" id="cooperecon-ch05_s03_s03_s01_p03">How much would you pay to avoid this gamble? If you are risk-neutral, you would be willing to pay only $10, which is the expected loss. If you are risk-averse, you would be willing to pay more than $10. The more risk-averse you are, the more you would be willing to pay.</p>
+            </div>
+            <p class="para editable block" id="cooperecon-ch05_s03_s03_s01_p04">It is risk aversion that allows insurance companies to make money. Risk-averse people prefer a sure thing to a gamble that has the same expected value. In fact, they will prefer the sure thing to a gamble with a slightly lower expected value. Because it can diversify risk, the insurance company cares only about the expected value. Thus an insurance company behaves as if it were risk-neutral.</p>
+        </div>
+    </div>
+    <div class="section" id="cooperecon-ch05_s03_s04">
+        <h2 class="title editable block">Different Kinds of Insurance</h2>
+        <p class="para editable block" id="cooperecon-ch05_s03_s04_p01">There are many different kinds of insurance available to you. We briefly discuss some of the most important.</p>
+        <div class="section" id="cooperecon-ch05_s03_s04_s01">
+            <h2 class="title editable block">Property Insurance</h2>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s01_p01">Many forms of property are insured: houses, cars, boats, the contents of your apartment, and so on. Indeed, some insurance is often mandatory. People purchase insurance because there are risks associated with owning property. Houses burn down, cars are stolen, and boats are wrecked in storms. In an abstract sense, these risks are just like a coin flip: heads means nothing happens; tails means there is a fire, a robbery, or a storm.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s01_p02">Let us look at home insurance in more detail. Suppose you own a house that is worth $120,000. You might pay $1,000 per year as a premium for an insurance policy. If your house burns down, then the insurance company will pay you some money to recover <em class="emphasis">part</em> of the loss. If the deductible on the policy is $20,000, you would receive an indemnity of $100,000. You lose $20,000 when the house burns down because the insurance company does not fully cover your loss.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s01_p03">Thus, if your house burns down, the insurance company loses the indemnity minus the premium—a total of $99,000. You lose the deductible and the premium—a total of $21,000. Your joint loss is $120,000—the lost value of the house. This serves to remind us again that insurance is not some magic way of preventing bad things from happening. When the house does not burn down, the insurance company earns the $1,000 premium, and you pay the $1,000 premium. Your joint loss is zero in this case.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s01_p04">You may wonder why insurance companies typically insist on a deductible as part of an insurance contract. After all, you would probably prefer to be covered for the entire loss. Deductibles exist because insurance policies can have the effect of altering how people behave. We have assumed that the probability of a bad thing happening was completely random. But if you are fully insured, you might not be so careful about how you look after your house. You might worry less about turning off the stove, ensuring that you have put out the fire in the fireplace, falling asleep while smoking, and so on. Deductibles make sure that you still have a big incentive to take care of your property.</p>
+        </div>
+        <div class="section" id="cooperecon-ch05_s03_s04_s02">
+            <h2 class="title editable block">Unemployment Insurance</h2>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p01">Not everyone who wants to work actually has a job. Some people are unemployed, meaning that they are actively looking for work but do not have jobs. The <span class="margin_term"><a class="glossterm">unemployment rate</a><span class="glossdef">The number of unemployed individuals divided by the sum of the number employed and the number unemployed.</span></span> is the number of unemployed individuals divided by the sum of the number employed and the number unemployed.</p>
+            <div class="callout block" id="cooperecon-ch05_s03_s04_s02_n01">
+                <h3 class="title"></h3>
+                <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s03#cooperecon-ch31_s03" xrefstyle="select:title">Section 31.3 "The Labor Market"</a></p>
+                <p class="para" id="cooperecon-ch05_s03_s04_s02_p02">If you want to learn more details about the definition and measurement of unemployment, refer to the toolkit.</p>
+            </div>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p03">Since 1960, the unemployment rate in the United States has averaged slightly under 6 percent. This means that for every 100 people in the labor force (either working or looking for a job), 94 of them are working, and the other 6 are looking for jobs. The <span class="margin_term"><a class="glossterm">labor market</a><span class="glossdef">Where suppliers and demanders of labor meet and trade.</span></span> is fluid so that, over time, unemployed workers find jobs, while some employed workers lose jobs and become unemployed. The unemployed find jobs, and others lose them and go through spells of unemployment.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p04">If you are laid off from your job and become unemployed, you obviously still need to spend money for food and rent. During a spell of unemployment, you have several possible sources of income. If you have an existing stock of accumulated savings, then you can draw on these. If you are a member of a union, you may receive some support from the union. You may receive some severance pay when you lose your job. You might be able to rely on the support of your family and friends. And, most relevant for this chapter, you may be eligible to receive income from the government, called <span class="margin_term"><a class="glossterm">unemployment insurance</a><span class="glossdef">A payment made by the government to those who are unemployed.</span></span>.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p05">Unemployment insurance is similar in some ways to health and property insurance. There is an unlucky event called unemployment, and the government provides insurance. Perhaps you think this is great news: after graduation, you can claim unemployment, collect from the government, and enjoy your leisure. Of course, life is not quite that good. First, to qualify for unemployment insurance, you have to hold a job for some period of time. The details of these regulations differ across countries and also across states within the United States. Second, unemployment benefits do not last forever, nor do they completely compensate for all of your lost income. Again, the details depend on the country or state in which you work.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p06">Why is the government in the business of providing insurance? To answer this, look back at our example of home insurance. The typical insurance company will have many policies with many different households. Over the course of a year, some households will make a claim on their insurance, but most will not. As long as the insurance company has lots of policies in many locations, then, on average, the number of insurance claims will be nearly constant each year. Although individual households face risk, the insurance company is able to diversify almost all of this risk.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p07">Unemployment is different. When the economy is doing well, unemployment is low, and few households need this form of insurance. When the economy is not doing well, then the unemployment rate can be very high. In such times, many people want to claim unemployment insurance <em class="emphasis">at the same time</em>. So unlike insurance policies for homeowners, there is no easy way to balance out the risks of unemployment. The risk of unemployment is not <em class="emphasis">independent</em> across all individuals.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s02_p08">If an individual insurance company tried to offer unemployment insurance, it might be unable to survive: during a period of low economic activity, the demands for insurance would be so severe that the insurance company might not be able to meet all the claims. The government has the ability to tax people and borrow as needed. This puts it in a much better position to offer unemployment insurance. So in many countries, the government raises revenue by taxing firms and workers and uses these funds to provide unemployment insurance.</p>
+        </div>
+        <div class="section" id="cooperecon-ch05_s03_s04_s03">
+            <h2 class="title editable block">Deposit Insurance</h2>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s03_p01">In the United States and in some other countries, deposits that you place in the bank are insured by the government. In the United States, the government provides insurance, up to $250,000 per deposit, to you in the event your bank closes.<span class="footnote" id="fwk-cooperecon-fn05_013">You can find details at FDIC, “Your Insured Deposits,” accessed March 14, 2011, <a class="link" target="_blank" href="http://www.fdic.gov/deposit/deposits/insured/basics.html">http://www.fdic.gov/deposit/deposits/insured/basics.html</a>.</span> Deposit insurance in the United States dates from the time of the Great Depression in the 1930s. In this period many banks had insufficient funds on hand to meet the demands of their depositors and so went bankrupt. When this occurred, depositors lost the money they had put in the bank. After the Great Depression, the US federal government instituted deposit insurance. Similar programs exist in most other countries.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s03_p02">The argument for why the government should provide deposit insurance is similar to the argument for government provision of unemployment insurance. During periods of financial turbulence, many banks are prone to failure. If there were a private insurance company providing deposit insurance, it would probably be unable to meet all the claims. In addition, there is considerable social value to deposit insurance. It gives people greater confidence in the bank and in the banking system, which in turn makes bank failures less likely. Because bank failures put a great deal of stress on the financial system, government has an interest in insuring deposits.</p>
+            <p class="para editable block" id="cooperecon-ch05_s03_s04_s03_p03">In the summer of 2007, the British bank Northern Rock entered a financial crisis. Savers who had put their money in this institution started to worry that the bank would go bust, in which case they would lose their money. The British government, like the US government, provides deposit insurance. However, the amount of this insurance was limited to a maximum of about $70,000, so some people were still concerned about their savings. As lines started to form outside Northern Rock branches, the British government—concerned that the possible failure of Northern Rock would put other banks at risk—ended up guaranteeing all of its deposits.</p>
+            <div class="key_takeaways editable block" id="cooperecon-ch05_s03_s04_s03_n01">
+                <h3 class="title">Key Takeaways</h3>
+                <ul class="itemizedlist" id="cooperecon-ch05_s03_s04_s03_l01">
+                    <li>The probability of a particular outcome is the percentage chance that the outcome will occur.</li>
+                    <li>An expected value is calculated by multiplying the probability of each outcome by the value of that outcome and then adding these numbers for all outcomes.</li>
+                    <li>Risk aversion means a preference for a sure thing rather than a gamble with the same expected value.</li>
+                    <li>We face many types of risks in our lives, and we can often buy insurance as a way to deal with these risks.</li>
+                    <li>Insurance companies provide a way for individuals to diversify their individual risks.</li>
+                </ul>
+            </div>
+            <div class="exercises editable block" id="cooperecon-ch05_s03_s04_s03_n02">
+                <h3 class="title">Checking Your Understanding</h3>
+                <ol class="orderedlist" id="cooperecon-ch05_s03_s04_s03_l02">
+                    <li>Imagine you have a die that is fair: the probability of rolling each number is ⅙. Each time you roll the die, it is independent of the previous roll. Suppose you roll the die 10 times, and you roll a 5 each time. What is the probability of getting a 5 on the next roll of the die? Relate your answer to the common analysis of sportscasters who say that a baseball hitter who normally bats 0.300 “is due” when that batter has no hits in his last 20 at bats.</li>
+                    <li>List some risks that you face that are not fully covered by insurance.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s09-02-using-discounted-present-value.html"><img src="shared/images/batch-left.png"></a> <a href="s09-02-using-discounted-present-value.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s09-04-embracing-risk.html">Next Section</a> <a href="s09-04-embracing-risk.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

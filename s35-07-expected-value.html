@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Expected Value</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-06-the-credit-market.html"><img src="shared/images/batch-left.png"></a> <a href="s35-06-the-credit-market.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-08-correcting-for-inflation.html">Next Section</a> <a href="s35-08-correcting-for-inflation.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s07" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.7</span> Expected Value</h2>
+    <p class="para editable block" id="cooperecon-ch31_s07_p01">Probability is the percentage chance that something will occur. For example, there is a 50 percent chance that a tossed coin will come up heads. We say that the probability of getting the <em class="emphasis">outcome</em> “<em class="emphasis">heads</em>” is 1/2. There are five things you need to know about probability:</p>
+    <ol class="orderedlist editable block" id="cooperecon-ch31_s07_l01">
+        <li>The list of possible outcomes must be complete.</li>
+        <li>The list of possible outcomes must not overlap.</li>
+        <li>If an outcome is certain to occur, it has probability 1.</li>
+        <li>If an outcome is certain not to occur, it has probability 0.</li>
+        <li>If we add together the probabilities for all the possible outcomes, the total must equal 1.</li>
+    </ol>
+    <p class="para editable block" id="cooperecon-ch31_s07_p02">The expected value of a situation with financial risk is a measure of how much you would expect to win (or lose) on average if the situation were to be replayed a large number of times. You can calculate expected value as follows:</p>
+    <ul class="itemizedlist editable block" id="cooperecon-ch31_s07_l02">
+        <li>For each outcome, multiply the probability of that outcome by the amount you will receive.</li>
+        <li>Add together these amounts over all the possible outcomes.</li>
+    </ul>
+    <p class="para editable block" id="cooperecon-ch31_s07_p03">For example, suppose you are offered the following proposal. Roll a six-sided die. If it comes up with 1 or 2, you get $90. If it comes up 3, 4, 5, or 6, you get $30. The expected value is</p>
+    <span class="informalequation block"><span class="mathphrase">(1/3) × $90 + (2/3) × $30 = $50.</span></span>
+    <p class="para editable block" id="cooperecon-ch31_s07_p04">Most people dislike risk. They prefer a fixed sum of money to a gamble that has the same expected value. <em class="emphasis">Risk aversion</em> is a measure of how much people want to avoid risk. In the example we just gave, most people would prefer a sure $50 to the uncertain proposal with the expected value of $50.</p>
+    <p class="para editable block" id="cooperecon-ch31_s07_p05">Suppose we present an individual with the following gamble:</p>
+    <ul class="itemizedlist editable block" id="cooperecon-ch31_s07_l03">
+        <li>With 99 percent probability, you lose nothing.</li>
+        <li>With 1 percent probability, you lose $1,000.</li>
+    </ul>
+    <p class="para editable block" id="cooperecon-ch31_s07_p06">The expected value of this gamble is −$10. Now ask the individual how much she would pay to avoid this gamble. Someone who is risk-neutral would be willing to pay only $10. Someone who is risk-averse would be willing to pay more than $10. The more risk-averse an individual, the more the person would be willing to pay.</p>
+    <p class="para editable block" id="cooperecon-ch31_s07_p07">The fact that risk-averse people will pay to shed risk is the basis of insurance. If people have different attitudes toward risky gambles, then the less risk-averse individual can provide insurance to the more risk-averse individual. There are gains from trade. Insurance is also based on diversification, which is the idea that people can share their risks so it is much less likely that any individual will face a large loss.</p>
+    <div class="section" id="cooperecon-ch31_s07_s01">
+        <h2 class="title editable block">Key Insights</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s07_s01_l01">
+            <li>Expected value is the sum of the probability of an event times the gain/loss if that event occurs.</li>
+            <li>Risk-averse people will pay to avoid risk. This is the basis of insurance.</li>
+        </ul>
+    </div>
+    <div class="section" id="cooperecon-ch31_s07_s02">
+        <h2 class="title editable block">More Formally</h2>
+        <p class="para editable block" id="cooperecon-ch31_s07_s02_p01">Consider a gamble where there are three and only three possible outcomes (<em class="emphasis">x</em>, <em class="emphasis">y</em>, <em class="emphasis">z</em>) that occur with probabilities <em class="emphasis">Pr(x)</em>, <em class="emphasis">Pr(y)</em>, and <em class="emphasis">Pr(z)</em>. Think of these outcomes as the number of dollars you get in each case. First, we know that</p>
+        <span class="informalequation block"><span class="mathphrase"><em class="emphasis">Pr(x)</em> + <em class="emphasis">Pr(y)</em> + <em class="emphasis">Pr(z)</em> = 1.</span></span>
+        <p class="para editable block" id="cooperecon-ch31_s07_s02_p02">Second, the expected value of this gamble is</p>
+        <span class="informalequation block"><span class="mathphrase"><em class="emphasis">EV</em> = (<em class="emphasis">Pr(x)</em>*<em class="emphasis">x</em>) + (<em class="emphasis">Pr(y)</em>*<em class="emphasis">y</em>) + (<em class="emphasis">Pr(z)</em>*<em class="emphasis">z</em>).</span></span>
+    </div>
+    <div class="section" id="cooperecon-ch31_s07_s03">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s07_s03_l01">
+            <li><a class="xref" href="cooperecon-ch05#cooperecon-ch05">Chapter 5 "Life Decisions"</a></li>
+            <li><a class="xref" href="cooperecon-ch09#cooperecon-ch09">Chapter 9 "Growing Jobs"</a></li>
+            <li><a class="xref" href="cooperecon-ch10#cooperecon-ch10">Chapter 10 "Making and Losing Money on Wall Street"</a></li>
+            <li><a class="xref" href="cooperecon-ch11#cooperecon-ch11">Chapter 11 "Raising the Wage Floor"</a></li>
+            <li><a class="xref" href="cooperecon-ch16#cooperecon-ch16">Chapter 16 "A Healthy Economy"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-06-the-credit-market.html"><img src="shared/images/batch-left.png"></a> <a href="s35-06-the-credit-market.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-08-correcting-for-inflation.html">Next Section</a> <a href="s35-08-correcting-for-inflation.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

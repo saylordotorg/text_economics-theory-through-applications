@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Mean and Variance</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-21-growth-rates.html"><img src="shared/images/batch-left.png"></a> <a href="s35-21-growth-rates.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-23-correlation-and-causality.html">Next Section</a> <a href="s35-23-correlation-and-causality.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s22" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.22</span> Mean and Variance</h2>
+    <p class="para editable block" id="cooperecon-ch31_s22_p01">To start our presentation of descriptive statistics, we construct a data set using a spreadsheet program. The idea is to simulate the flipping of a two-sided coin. Although you might think it would be easier just to flip a coin, doing this on a spreadsheet gives you a full range of tools embedded in that program. To generate the data set, we drew 10 random numbers using the spreadsheet program. In the program we used, the function was called RAND and this generated the choice of a number between zero and one. Those choices are listed in the second column of <a class="xref" href="#cooperecon-ch31_s22_t01">Table 31.10</a>.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p02">The third column creates the two events of heads and tails that we normally associate with a coin flip. To generate this last column, we adopted a rule: if the random number was less than 0.5, we termed this a “tail” and assigned a 0 to the draw; otherwise we termed it a “head” and assigned a 1 to the draw. The choice of 0.5 as the cutoff for heads reflects the fact that we are considering the flips of a fair coin in which each side has the same probability: 0.5.</p>
+    <div class="table block" id="cooperecon-ch31_s22_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.10</span> </p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Draw</th>
+                    <th>Random Number</th>
+                    <th>Heads (1) or Tails (0)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>0.94</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>0.84</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>0.26</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>0.04</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>0.01</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>0.57</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>0.74</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>0.81</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>0.64</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>0.25</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="para editable block" id="cooperecon-ch31_s22_p03">Keep in mind that the realization of the random number in draw <em class="emphasis">i</em> is independent of the realizations of the random numbers in both past and future draws. Whether a coin comes up heads or tails on any particular flip does not depend on other outcomes.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p04">There are many ways to summarize the information contained in a sample of data. Even before you start to compute some complicated statistics, having a way to present the data is important. One possibility is a bar graph in which the fraction of observations of each outcome is easily shown. Alternatively, a pie chart is often used to display this fraction. Both the pie chart and the bar diagram are commonly found in spreadsheet programs.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p05">Economists and statisticians often want to describe data in terms of numbers rather than figures. We use the data from the table to define and illustrate two statistics that are commonly used in economics discussions. The first is the mean (or average) and is a measure of <em class="emphasis">central tendency</em>. Before you read any further, ask, “What do you think the average ought to be from the coin flipping exercise?” It is natural to say 0.5, since half the time the outcome will be a head and thus have a value of zero, whereas the remainder of the time the outcome will be a tail and thus have a value of one.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p06">Whether or not that guess holds can be checked by looking at <a class="xref" href="#cooperecon-ch31_s22_t01">Table 31.10</a> and calculating the mean of the outcome. We let <em class="emphasis">k</em><sub class="subscript"><em class="emphasis">i</em></sub> be the outcome of draw <em class="emphasis">i</em>. For example, from the table, <em class="emphasis">k</em><sub class="subscript">1</sub> = 1 and <em class="emphasis">k</em><sub class="subscript">5</sub> = 0. Then the formula for the mean if there are <em class="emphasis">N</em> draws is μ = Σ<sub class="subscript"><em class="emphasis">i</em></sub><em class="emphasis">k</em><sub class="subscript"><em class="emphasis">i</em></sub>/<em class="emphasis">N.</em> Here Σ<sub class="subscript"><em class="emphasis">i</em></sub><em class="emphasis">k</em><sub class="subscript"><em class="emphasis">i</em></sub> means the sum of the <em class="emphasis">k</em><sub class="subscript"><em class="emphasis">i</em></sub> outcomes. In words, the mean, denoted by μ, is calculated by adding together the draws and dividing by the number of draws (<em class="emphasis">N</em>). In the table, <em class="emphasis">N</em> = 10, and the sum of the draws of random numbers is about 51.0. Thus the mean of the 10 draws is about 0.51.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p07">We can also calculate the mean of the heads/tails column, which is 0.6 since heads came up 6 times in our experiment. This calculation of the mean differs from the mean of the draws since the numbers in the two columns differ with the third column being a very discrete way to represent the information in the second column.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p08">A second commonly used statistic is a measure of dispersion of the data called the variance. The variance, denoted σ<sup class="superscript">2</sup>, is calculated as σ<sup class="superscript">2</sup> = Σ<sub class="subscript"><em class="emphasis">i</em></sub>(<em class="emphasis">k</em><sub class="subscript"><em class="emphasis">i</em></sub> − μ)<sup class="superscript">2</sup>/(<em class="emphasis">N</em>). From this formula, if all the draws were the same (thus equal to the mean), then the variance would be zero. As the draws spread out from the mean (both above and below), the variance increases. Since some observations are above the mean and others below, we square the difference between a single observation (<em class="emphasis">k</em><sub class="subscript"><em class="emphasis">i</em></sub>) and the mean (μ) when calculating the variance. This means that values above and below the mean both contribute a positive amount to the variance. Squaring also means that values that are a long way away from the mean have a big effect on the variance.</p>
+    <p class="para editable block" id="cooperecon-ch31_s22_p09">For the data given in the table, the mean of the 10 draws was given as μ = 0.51. So to calculate the variance, we would subtract the mean from each draw, square the difference, and then add together the squared differences. This yields a variance of 0.118 for this draw. A closely related concept is that of the standard deviation, which is the square root of the variance. For our example, the standard deviation is 0.34. The standard deviation is greater than the variance since the variance is less than 1.</p>
+    <div class="section" id="cooperecon-ch31_s22_s01">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s22_s01_l01">
+            <li><a class="xref" href="cooperecon-ch20#cooperecon-ch20">Chapter 20 "Globalization and Competitiveness"</a></li>
+            <li><a class="xref" href="cooperecon-ch22#cooperecon-ch22">Chapter 22 "The Great Depression"</a></li>
+            <li><a class="xref" href="cooperecon-ch26#cooperecon-ch26">Chapter 26 "Inflations Big and Small"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-21-growth-rates.html"><img src="shared/images/batch-left.png"></a> <a href="s35-21-growth-rates.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-23-correlation-and-causality.html">Next Section</a> <a href="s35-23-correlation-and-causality.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

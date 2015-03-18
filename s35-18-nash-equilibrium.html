@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Nash Equilibrium</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-17-production-function.html"><img src="shared/images/batch-left.png"></a> <a href="s35-17-production-function.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-19-externalities-and-public-goods.html">Next Section</a> <a href="s35-19-externalities-and-public-goods.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s18" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.18</span> Nash Equilibrium</h2>
+    <p class="para editable block" id="cooperecon-ch31_s18_p01">A <strong class="emphasis bold">Nash equilibrium</strong> is used to predict the outcome of a game. By a game, we mean the interaction of a few individuals, called <em class="emphasis">players</em>. Each player chooses an <em class="emphasis">action</em> and receives a <em class="emphasis">payoff</em> that depends on the actions chosen by everyone in the game.</p>
+    <p class="para editable block" id="cooperecon-ch31_s18_p02">A Nash equilibrium is an action for each player that satisfies two conditions:</p>
+    <ol class="orderedlist editable block" id="cooperecon-ch31_s18_l01">
+        <li>The action yields the highest payoff for that player given her predictions about the other players’ actions.</li>
+        <li>The player’s predictions of others’ actions are correct.</li>
+    </ol>
+    <p class="para editable block" id="cooperecon-ch31_s18_p03">Thus a Nash equilibrium has two dimensions. Players make decisions that are in their own self-interests, and players make accurate predictions about the actions of others.</p>
+    <p class="para editable block" id="cooperecon-ch31_s18_p04">Consider the games in <a class="xref" href="#cooperecon-ch31_s18_t01">Table 31.6 "Prisoners’ Dilemma"</a>, <a class="xref" href="#cooperecon-ch31_s18_t02">Table 31.7 "Dictator Game"</a>, <a class="xref" href="#cooperecon-ch31_s18_t03">Table 31.8 "Ultimatum Game"</a>, and <a class="xref" href="#cooperecon-ch31_s18_t04">Table 31.9 "Coordination Game"</a>. The numbers in the tables give the payoff to each player from the actions that can be taken, with the payoff of the row player listed first.</p>
+    <div class="table block" id="cooperecon-ch31_s18_t01" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.6</span> Prisoners’ Dilemma</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Left</th>
+                    <th>Right</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Up</td>
+                    <td>5, 5</td>
+                    <td>0, 10</td>
+                </tr>
+                <tr>
+                    <td>Down</td>
+                    <td>10, 0</td>
+                    <td>2, 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table block" id="cooperecon-ch31_s18_t02" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.7</span> Dictator Game</p>
+        <table cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>Number of dollars (<em class="emphasis">x</em>)</td>
+                    <td>100 − <em class="emphasis">x</em>, <em class="emphasis">x</em>
+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table block" id="cooperecon-ch31_s18_t03" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.8</span> Ultimatum Game</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Accept</th>
+                    <th>Reject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Number of dollars (<em class="emphasis">x</em>)</td>
+                    <td>100 − <em class="emphasis">x</em>, <em class="emphasis">x</em>
+</td>
+                    <td>0, 0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table block" id="cooperecon-ch31_s18_t04" frame="all">
+        <p class="title"><span class="title-prefix">Table 31.9</span> Coordination Game</p>
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Left</th>
+                    <th>Right</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Up</td>
+                    <td>5, 5</td>
+                    <td>0, 1</td>
+                </tr>
+                <tr>
+                    <td>Down</td>
+                    <td>1, 0</td>
+                    <td>4, 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <ul class="itemizedlist editable block" id="cooperecon-ch31_s18_l02">
+        <li>
+<strong class="emphasis bold">Prisoners’ dilemma.</strong> The row player chooses between the action labeled <em class="emphasis">Up</em> and the one labeled <em class="emphasis">Down</em>. The column player chooses between the action labeled <em class="emphasis">Left</em> and the one labeled <em class="emphasis">Right</em>. For example, if row chooses <em class="emphasis">Up</em> and column chooses <em class="emphasis">Right</em>, then the row player has a payoff of 0, and the column player has a payoff of 10. If the row player predicts that the column player will choose <em class="emphasis">Left</em>, then the row player should choose <em class="emphasis">Down</em> (that is, down for the row player is her <em class="emphasis">best response</em> to left by the column player). From the column player’s perspective, if he predicts that the row player will choose <em class="emphasis">Up</em>, then the column player should choose <em class="emphasis">Right</em>. The Nash equilibrium occurs when the row player chooses <em class="emphasis">Down</em> and the column player chooses <em class="emphasis">Right</em>. Our two conditions for a Nash equilibrium of making optimal choices and predictions being right both hold.</li>
+        <li>
+<strong class="emphasis bold">Social dilemma.</strong> This is a version of the prisoners’ dilemma in which there are a large number of players, all of whom face the same payoffs.</li>
+        <li>
+<strong class="emphasis bold">Dictator game.</strong> The row player is called the dictator. She is given $100 and is asked to choose how many dollars (<em class="emphasis">x</em>) to give to the column player. Then the game ends. Because the column player does not move in this game, the dictator game is simple to analyze: if the dictator is interested in maximizing her payoff, she should offer nothing (<em class="emphasis">x</em> = 0).</li>
+        <li>
+<strong class="emphasis bold">Ultimatum game.</strong> This is like the dictator game except there is a second stage. In the first stage, the row player is given $100 and told to choose how much to give to the column player. In the second stage, the column player accepts or rejects the offer. If the column player rejects the offer, neither player receives any money. The best choice of the row player is then to offer a penny (the smallest amount of money there is). The best choice of the column player is to accept. This is the Nash equilibrium.</li>
+        <li>
+<strong class="emphasis bold">Coordination game.</strong> The coordination game has two Nash equilibria. If the column player plays <em class="emphasis">Left</em>, then the row player plays <em class="emphasis">Up</em>; if the row player plays <em class="emphasis">Up</em>, then the column player plays <em class="emphasis">Left</em>. This is an equilibrium. But <em class="emphasis">Down/Right</em> is also a Nash equilibrium. Both players prefer <em class="emphasis">Up/Left</em>, but it is possible to get stuck in a bad equilibrium.</li>
+    </ul>
+    <div class="section" id="cooperecon-ch31_s18_s01">
+        <h2 class="title editable block">Key Insights</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s18_s01_l01">
+            <li>A Nash equilibrium is used to predict the outcome of games.</li>
+            <li>In real life, payoffs may be more complicated than these games suggest. Players may be motivated by fairness or spite.</li>
+        </ul>
+    </div>
+    <div class="section" id="cooperecon-ch31_s18_s02">
+        <h2 class="title editable block">More Formally</h2>
+        <p class="para editable block" id="cooperecon-ch31_s18_s02_p01">We describe a game with three players (1, 2, 3), but the idea generalizes straightforwardly to situations with any number of players. Each player chooses a strategy (s<sub class="subscript">1</sub>, s<sub class="subscript">2</sub>, s<sub class="subscript">3</sub>). Suppose σ<sub class="subscript">1</sub>(s<sub class="subscript">1</sub>, s<sub class="subscript">2</sub>, s<sub class="subscript">3</sub>) is the payoff to player 1 if (s<sub class="subscript">1</sub>, s<sub class="subscript">2</sub>, s<sub class="subscript">3</sub>) is the list of strategies chosen by the players (and similarly for players 2 and 3). We put an asterisk (*) to denote the best strategy chosen by a player. Then a list of strategies (s*<sub class="subscript">1</sub>, s*<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>) is a Nash equilibrium if the following statements are true:</p>
+        <span class="informalequation block"><span class="mathphrase">σ<sub class="subscript">1</sub>(s*<sub class="subscript">1</sub>, s*<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>) ≥ σ<sub class="subscript">1</sub>(s<sub class="subscript">1</sub>, s*<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>)</span></span>
+        <span class="informalequation block"><span class="mathphrase">σ<sub class="subscript">2</sub>(s*<sub class="subscript">1</sub>, s*<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>) ≥ σ<sub class="subscript">2</sub>(s*<sub class="subscript">1</sub>, s<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>)</span></span>
+        <span class="informalequation block"><span class="mathphrase">σ<sub class="subscript">3</sub>(s*<sub class="subscript">1</sub>, s*<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>) ≥ σ<sub class="subscript">3</sub>(s*<sub class="subscript">1</sub>, s*<sub class="subscript">2</sub>, s<sub class="subscript">3</sub>)</span></span>
+        <p class="para editable block" id="cooperecon-ch31_s18_s02_p02">In words, the first condition says that, given that players 2 and 3 are choosing their best strategies (s*<sub class="subscript">2</sub>, s*<sub class="subscript">3</sub>), then player 1 can do no better than to choose strategy s*<sub class="subscript">1</sub>. If a similar condition holds for every player, then we have a Nash equilibrium.</p>
+    </div>
+    <div class="section" id="cooperecon-ch31_s18_s03">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s18_s03_l01">
+            <li><a class="xref" href="cooperecon-ch22#cooperecon-ch22">Chapter 22 "The Great Depression"</a></li>
+            <li><a class="xref" href="cooperecon-ch26#cooperecon-ch26">Chapter 26 "Inflations Big and Small"</a></li>
+            <li><a class="xref" href="cooperecon-ch30#cooperecon-ch30">Chapter 30 "The Global Financial Crisis"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-17-production-function.html"><img src="shared/images/batch-left.png"></a> <a href="s35-17-production-function.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-19-externalities-and-public-goods.html">Next Section</a> <a href="s35-19-externalities-and-public-goods.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>

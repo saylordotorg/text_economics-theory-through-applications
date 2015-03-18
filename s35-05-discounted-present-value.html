@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Discounted Present Value</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-04-choices-over-time.html"><img src="shared/images/batch-left.png"></a> <a href="s35-04-choices-over-time.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-06-the-credit-market.html">Next Section</a> <a href="s35-06-the-credit-market.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s05" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.5</span> Discounted Present Value</h2>
+    <p class="para editable block" id="cooperecon-ch31_s05_p01"><strong class="emphasis bold">Discounted present value</strong> is a technique used to add dollar amounts over time. We need this technique because a dollar today has a different value from a dollar in the future.</p>
+    <p class="para editable block" id="cooperecon-ch31_s05_p02">The discounted present value this year of $1.00 that you will receive next year is as follows:</p>
+    <span class="informalequation block"><math xml:id="cooperecon-31_m001" display="block"><semantics><mrow><mfrac><mrow><mi>$</mi><mn>1</mn></mrow><mrow><mtext>nominal interest factor</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>$</mi><mn>1</mn></mrow><mrow><mn>1</mn><mo>+</mo><mtext>nominal interest rate</mtext></mrow></mfrac><mtext>.</mtext></mrow></semantics></math></span>
+    <p class="para editable block" id="cooperecon-ch31_s05_p03">If the <strong class="emphasis bold">nominal interest rate</strong> is 10 percent, then the <strong class="emphasis bold">nominal interest factor</strong> is 1.1, so $1 next year is worth $1/1.1 = $0.91 this year. As the interest rate increases, the discounted present value decreases.</p>
+    <p class="para editable block" id="cooperecon-ch31_s05_p04">More generally, we can compute the value of an asset this year from the following formula:</p>
+    <span class="informalequation block"><math xml:id="cooperecon-31_m002" display="block"><semantics><mrow><mtext>value of asset this year </mtext><mo>=</mo><mfrac><mrow><mtext>flow benefit from asset this year</mtext><mo>+</mo><mtext>price of asset next year</mtext></mrow><mrow><mtext>nominal interest factor</mtext></mrow></mfrac><mtext>.</mtext></mrow></semantics></math></span>
+    <p class="para editable block" id="cooperecon-ch31_s05_p05">The flow benefit depends on the asset. For a bond, the flow benefit is a coupon payment. For a stock, the flow benefit is a dividend payment. For a fruit tree, the flow benefit is the yield of a crop.</p>
+    <p class="para block" id="cooperecon-ch31_s05_p06">If an asset (such as a bond) yields a payment next year of $10 and has a price next year of $90, then the “flow benefit from asset + price of the asset next year” is $100. The value of the asset this year is then <span class="inlineequation"><math xml:id="cooperecon-29_m003" display="inline"><semantics><mrow><mfrac><mrow><mi>$</mi><mn>100</mn></mrow><mrow><mtext>nominal interest factor</mtext></mrow></mfrac><mtext>.</mtext></mrow></semantics></math></span> If the nominal interest rate is 20 percent, then the value of the asset is $100/1.2 = 83.33.</p>
+    <p class="para editable block" id="cooperecon-ch31_s05_p07">We discount nominal flows using a nominal interest factor. We discount real flows (that is, flows already corrected for inflation) using a <strong class="emphasis bold">real interest factor</strong>, which is equal to (1 + <strong class="emphasis bold">real interest rate</strong>).</p>
+    <div class="section" id="cooperecon-ch31_s05_s01">
+        <h2 class="title editable block">Key Insights</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s05_s01_l01">
+            <li>If the interest rate is positive, then the discounted present value is less than the direct sum of flows.</li>
+            <li>If the interest rate increases, the discounted present value will decrease.</li>
+        </ul>
+    </div>
+    <div class="section" id="cooperecon-ch31_s05_s02">
+        <h2 class="title editable block">More Formally</h2>
+        <p class="para editable block" id="cooperecon-ch31_s05_s02_p01">Denote the dividend on an asset in period <em class="emphasis">t</em> as <em class="emphasis">D</em><sub class="subscript"><em class="emphasis">t</em></sub>. Define <em class="emphasis">R</em><sub class="subscript"><em class="emphasis">t</em></sub> as the <em class="emphasis">cumulative</em> effect of interest rates up to period <em class="emphasis">t</em>. For example, <em class="emphasis">R</em><sub class="subscript">2</sub> = (1 + <em class="emphasis">r</em><sub class="subscript">1</sub>)(1 + <em class="emphasis">r</em><sub class="subscript">2</sub>). Then the value of an asset that yields <em class="emphasis">D</em><sub class="subscript"><em class="emphasis">t</em></sub> dollars in every year up to year <em class="emphasis">T</em> is given by</p>
+        <span class="informalequation block"><math xml:id="cooperecon-29_m004" display="block"><semantics><mrow><mtext>asset value</mtext><mo>=</mo><mfrac><mrow><msub><mi>D</mi><mn>1</mn></msub></mrow><mrow><msub><mi>R</mi><mn>1</mn></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>D</mi><mn>2</mn></msub></mrow><mrow><msub><mi>R</mi><mn>2</mn></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>D</mi><mn>3</mn></msub></mrow><mrow><msub><mi>R</mi><mn>3</mn></msub></mrow></mfrac><mo>+</mo><mn>...</mn><mo>+</mo><mfrac><mrow><msub><mi>D</mi><mi>T</mi></msub></mrow><mrow><msub><mi>R</mi><mi>T</mi></msub></mrow></mfrac><mtext>.</mtext></mrow></semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch31_s05_s02_p02">If the interest rate is constant (equal to <em class="emphasis">r</em>), then the one period interest factor is <em class="emphasis">R</em> = 1 + <em class="emphasis">r</em>, and <em class="emphasis">R</em><sub class="subscript"><em class="emphasis">t</em></sub> = <em class="emphasis">R</em><sup class="superscript"><em class="emphasis">t</em></sup>.</p>
+        <p class="para editable block" id="cooperecon-ch31_s05_s02_p03">The discounted present value tool is illustrated in <a class="xref" href="#cooperecon-ch31_s05_s02_t01">Table 31.1 "Discounted Present Value with Different Interest Rates"</a>. The number of years (<em class="emphasis">T</em>) is set equal to 5. The table gives the value of the dividends in each year and computes the discounted present values for two different interest rates. For this example, the annual interest rates are constant over time.</p>
+        <div class="table block" id="cooperecon-ch31_s05_s02_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 31.1</span> Discounted Present Value with Different Interest Rates</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Dividend ($)</th>
+                        <th>Discounted Present Value with <em class="emphasis">R</em> = 1.05 ($)</th>
+                        <th>Discounted Present Value with <em class="emphasis">R</em> = 1.10 ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>95.24</td>
+                        <td>90.91</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>90</td>
+                        <td>81.63</td>
+                        <td>74.38</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>120</td>
+                        <td>103.66</td>
+                        <td>90.16</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>400</td>
+                        <td>329.08</td>
+                        <td>273.20</td>
+                    </tr>
+                    <tr>
+                        <td>Discounted present value</td>
+                        <td></td>
+                        <td>709.61</td>
+                        <td>628.65</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="section" id="cooperecon-ch31_s05_s03">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s05_s03_l01">
+            <li><a class="xref" href="cooperecon-ch23#cooperecon-ch23">Chapter 23 "Jobs in the Macroeconomy"</a></li>
+            <li><a class="xref" href="cooperecon-ch25#cooperecon-ch25">Chapter 25 "Understanding the Fed"</a></li>
+            <li><a class="xref" href="cooperecon-ch28#cooperecon-ch28">Chapter 28 "Social Security"</a></li>
+            <li><a class="xref" href="cooperecon-ch29#cooperecon-ch29">Chapter 29 "Balancing the Budget"</a></li>
+            <li><a class="xref" href="cooperecon-ch30#cooperecon-ch30">Chapter 30 "The Global Financial Crisis"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-04-choices-over-time.html"><img src="shared/images/batch-left.png"></a> <a href="s35-04-choices-over-time.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-06-the-credit-market.html">Next Section</a> <a href="s35-06-the-credit-market.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

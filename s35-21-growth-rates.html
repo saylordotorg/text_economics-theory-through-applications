@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Growth Rates</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-20-foreign-exchange-market.html"><img src="shared/images/batch-left.png"></a> <a href="s35-20-foreign-exchange-market.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-22-mean-and-variance.html">Next Section</a> <a href="s35-22-mean-and-variance.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch31_s21" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">31.21</span> Growth Rates</h2>
+    <p class="para editable block" id="cooperecon-ch31_s21_p01">If some variable <em class="emphasis">x</em> (for example, the number of gallons of gasoline sold in a week) changes from <em class="emphasis">x</em><sub class="subscript">1</sub> to <em class="emphasis">x</em><sub class="subscript">2</sub>, then we can define the change in that variable as Δ<em class="emphasis">x</em> = <em class="emphasis">x</em><sub class="subscript">2</sub> − <em class="emphasis">x</em><sub class="subscript">1</sub>. But there are difficulties with this simple definition. The number that we calculate will change, depending on the units in which we measure <em class="emphasis">x</em>. If we measure in millions of gallons, <em class="emphasis">x</em> will be a much smaller number than if we measure in gallons. If we measured <em class="emphasis">x</em> in liters rather than gallons (as it is measured in most countries), it would be a bigger number. So the number we calculate depends on the units we choose. To avoid these problems, we look at percentage changes and express the change as a fraction of the individual value. In what follows, we use the notation %Δ<em class="emphasis">x</em> to mean the percentage change in <em class="emphasis">x</em> and define it as follows: %Δ<em class="emphasis">x</em> = (<em class="emphasis">x</em><sub class="subscript">2</sub> − <em class="emphasis">x</em><sub class="subscript">1</sub>)/<em class="emphasis">x</em><sub class="subscript">1</sub>. A percentage change equal to 0.1 means that gasoline consumption increased by 10 percent. Why? Because 10 percent means 10 “per hundred,” so 10 percent = 10/100 = 0.1.</p>
+    <p class="para editable block" id="cooperecon-ch31_s21_p02">Very often in economics, we are interested in changes that take place over time. Thus we might want to compare gross domestic product (GDP) between 2012 and 2013. Suppose we know that GDP in the United States in 2012 was $14 trillion and that GDP in 2013 was $14.7 trillion. Using the letter <em class="emphasis">Y</em> to denote GDP measured in trillions, we write <em class="emphasis">Y</em><sub class="subscript">2012</sub> = 14.0 and <em class="emphasis">Y</em><sub class="subscript">2013</sub> = 14.7. If we want to talk about GDP at different points in time without specifying a particular year, we use the notation <em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub>. We express the change in a variable over time in the form of a growth rate, which is just an example of a percentage change. Thus the growth rate of GDP in 2013 is calculated as follows:</p>
+    <span class="informalequation block"><span class="mathphrase">%Δ<em class="emphasis">Y</em><sub class="subscript">2013</sub> = (<em class="emphasis">Y</em><sub class="subscript">2013</sub> − <em class="emphasis">Y</em><sub class="subscript">2012</sub>)/<em class="emphasis">Y</em><sub class="subscript">2012</sub> = (14.7 − 14)/14 = 0.05.</span></span>
+    <p class="para editable block" id="cooperecon-ch31_s21_p03">The growth rate equals 5 percent. In general, we write %Δ<em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub><sub class="subscript">+1</sub> = (<em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub><sub class="subscript">+1</sub> − <em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub>)/<em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub>. Occasionally, we use the <em class="emphasis">gross growth rate</em>, which simply equals 1 + the growth rate. So, for example, the gross growth rate of GDP equals <em class="emphasis">Y</em><sub class="subscript">2013</sub>/<em class="emphasis">Y</em><sub class="subscript">2012</sub>, or 1.05.</p>
+    <p class="para editable block" id="cooperecon-ch31_s21_p04">There are some useful rules that describe the behavior of percentage changes and growth rates.</p>
+    <p class="para editable block" id="cooperecon-ch31_s21_p05"><strong class="emphasis bold">The Product Rule.</strong> Suppose we have three variables, <em class="emphasis">x</em>, <em class="emphasis">y</em>, and <em class="emphasis">z</em>, and suppose</p>
+    <span class="informalequation block"><span class="mathphrase"><em class="emphasis">x</em> = <em class="emphasis">yz.</em></span></span>
+    <p class="para editable block" id="cooperecon-ch31_s21_p06">Then</p>
+    <span class="informalequation block"><span class="mathphrase">%Δ<em class="emphasis">x</em> = %Δ<em class="emphasis">y</em> + %Δ<em class="emphasis">z</em>.</span></span>
+    <p class="para editable block" id="cooperecon-ch31_s21_p07">In other words, the growth rate of a product of two variables equals the sum of the growth rates of the individual variables.</p>
+    <p class="para editable block" id="cooperecon-ch31_s21_p08"><strong class="emphasis bold">The Quotient Rule.</strong> Now suppose we rearrange our original equation by dividing both sides by <em class="emphasis">z</em> to obtain</p>
+    <span class="informalequation block"><math xml:id="cooperecon-29_m006" display="block"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>x</mi><mi>z</mi></mfrac><mo>.</mo></mrow></semantics></math></span>
+    <p class="para editable block" id="cooperecon-ch31_s21_p09">If we take the product rule and subtract %Δ<em class="emphasis">z</em> from both sides, we get the following:</p>
+    <span class="informalequation block"><span class="mathphrase">%Δ<em class="emphasis">y</em> = %Δ<em class="emphasis">x</em> − %Δ<em class="emphasis">z</em>.</span></span>
+    <p class="para editable block" id="cooperecon-ch31_s21_p10"><strong class="emphasis bold">The Power Rule.</strong> There is one more rule of growth rates that we make use of in some advanced topics, such as growth accounting. Suppose that</p>
+    <span class="informalequation block"><span class="mathphrase"><em class="emphasis">y = x</em><sup class="superscript"><em class="emphasis">a</em></sup>.</span></span>
+    <p class="para editable block" id="cooperecon-ch31_s21_p11">Then</p>
+    <span class="informalequation block"><span class="mathphrase">%Δ<em class="emphasis">y</em> = <em class="emphasis">a</em>(%Δ<em class="emphasis">x</em>).</span></span>
+    <p class="para block" id="cooperecon-ch31_s21_p12">For example, if <em class="emphasis">y</em> = <em class="emphasis">x</em><sup class="superscript">2</sup>, then the growth rate of <em class="emphasis">y</em> is twice the growth rate of <em class="emphasis">x</em>. If <span class="inlineequation"><math xml:id="cooperecon-29_m007" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mi>x</mi></msqrt><mtext>,</mtext></mrow></semantics></math></span> then the growth rate of <em class="emphasis">y</em> is half the growth rate of <em class="emphasis">x</em> (remembering that a square root is the same as a power of ½).</p>
+    <div class="section" id="cooperecon-ch31_s21_s01">
+        <h2 class="title editable block">More Formally</h2>
+        <p class="para editable block" id="cooperecon-ch31_s21_s01_p01">Growth rates compound over time: if the growth rate of a variable is constant, then the change in the variable increases over time. For example, suppose GDP in 2020 is 20.0, and it grows at 10 percent per year. Then in 2021, GDP is 22.0 (an increase of 2.0), but in 2022, GDP is 24.2 (an increase of 2.2). If this compounding takes place every instant, then we say that we have <em class="emphasis">exponential growth</em>. Formally, we write exponential growth using the number <em class="emphasis">e</em> = 2.71828.… If the value of <em class="emphasis">Y</em> at time 0 equals <em class="emphasis">Y</em><sub class="subscript">0</sub> and if <em class="emphasis">Y</em> grows at the constant rate <em class="emphasis">g</em> (where <em class="emphasis">g</em> is an “annualized” or per year growth rate), then at time <em class="emphasis">t</em> (measured in years),</p>
+        <span class="informalequation block"><span class="mathphrase"><em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub> = <em class="emphasis">e</em><sup class="superscript"><em class="emphasis">gt</em></sup><em class="emphasis">Y</em><sub class="subscript">0</sub>.</span></span>
+        <p class="para editable block" id="cooperecon-ch31_s21_s01_p02">A version of this formula can also be used to calculate the average growth rate of a variable if we know its value at two different times. We can write the formula as</p>
+        <span class="informalequation block"><span class="mathphrase"><em class="emphasis">e</em><sup class="superscript"><em class="emphasis">gt</em></sup> = <em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub>/<em class="emphasis">Y</em><sub class="subscript">0</sub>,</span></span>
+        <p class="para editable block" id="cooperecon-ch31_s21_s01_p03">which also means</p>
+        <span class="informalequation block"><span class="mathphrase"><em class="emphasis">gt</em> = ln(Y<sub class="subscript"><em class="emphasis">t</em></sub>/Y<sub class="subscript">0</sub>),</span></span>
+        <p class="para editable block" id="cooperecon-ch31_s21_s01_p04">where ln() is the natural logarithm. You do not need to know exactly what this means; you can simply calculate a logarithm using a scientific calculator or a spreadsheet. Dividing by <em class="emphasis">t</em> we get the average growth rate</p>
+        <span class="informalequation block"><span class="mathphrase"><em class="emphasis">g</em> = ln(<em class="emphasis">Y</em><sub class="subscript"><em class="emphasis">t</em></sub>/<em class="emphasis">Y</em><sub class="subscript">0</sub>)/<em class="emphasis">t</em>.</span></span>
+        <p class="para editable block" id="cooperecon-ch31_s21_s01_p05">For example, suppose GDP in 2020 is 20.0 and GDP in 2030 is 28.0. Then <em class="emphasis">Y</em><sub class="subscript">2030</sub>/<em class="emphasis">Y</em><sub class="subscript">2020</sub> = 28/20 = 1.4. Using a calculator, we can find ln(1.4) = 0.3364. Dividing by 10 (since the two dates are 10 years apart), we get an average growth rate of 0.034, or 3.4 percent per year.</p>
+    </div>
+    <div class="section" id="cooperecon-ch31_s21_s02">
+        <h2 class="title editable block">The Main Uses of This Tool</h2>
+        <ul class="itemizedlist editable block" id="cooperecon-ch31_s21_s02_l01">
+            <li><a class="xref" href="cooperecon-ch18#cooperecon-ch18">Chapter 18 "The State of the Economy"</a></li>
+            <li><a class="xref" href="cooperecon-ch20#cooperecon-ch20">Chapter 20 "Globalization and Competitiveness"</a></li>
+            <li><a class="xref" href="cooperecon-ch21#cooperecon-ch21">Chapter 21 "Global Prosperity and Global Poverty"</a></li>
+            <li><a class="xref" href="cooperecon-ch22#cooperecon-ch22">Chapter 22 "The Great Depression"</a></li>
+            <li><a class="xref" href="cooperecon-ch24#cooperecon-ch24">Chapter 24 "Money: A User’s Guide"</a></li>
+            <li><a class="xref" href="cooperecon-ch26#cooperecon-ch26">Chapter 26 "Inflations Big and Small"</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s35-20-foreign-exchange-market.html"><img src="shared/images/batch-left.png"></a> <a href="s35-20-foreign-exchange-market.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s35-22-mean-and-variance.html">Next Section</a> <a href="s35-22-mean-and-variance.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>

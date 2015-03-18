@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>The Value of an Asset</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-01-a-walk-down-wall-street.html"><img src="shared/images/batch-left.png"></a> <a href="s14-01-a-walk-down-wall-street.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-03-asset-markets-and-asset-prices.html">Next Section</a> <a href="s14-03-asset-markets-and-asset-prices.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="cooperecon-ch10_s02" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">10.2</span> The Value of an Asset</h2>
+    <div class="learning_objectives editable block" id="cooperecon-ch10_s02_n01">
+        <h3 class="title">Learning Objectives</h3>
+        <ol class="orderedlist" id="cooperecon-ch10_s02_l01">
+            <li>What factors determine the value of an asset?</li>
+            <li>How do you use discounted present value to calculate the value of an asset?</li>
+            <li>How is risk taken into account when valuing an asset?</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="cooperecon-ch10_s02_p02">Our basic explanation of assets reveals that there are two ways in which you can earn money from holding an asset: (1) You may receive some kind of payment that we call a <em class="emphasis">flow benefit</em>—a dividend payment from a stock, a coupon payment from a bond, a rental check from an apartment, and so on. (2) The price of the asset may increase, in which case you get a capital gain. You might guess that the price of an asset should be linked in some way to the payments you get from the asset, and you would be right. In this section, we explain how to determine the price of an asset. To do so, we use two tools: <strong class="emphasis bold">discounted present value</strong> and <strong class="emphasis bold">expected value</strong>.<span class="footnote" id="fwk-cooperecon-fn10_006">These tools are discussed at length in <a class="xref" href="cooperecon-ch05#cooperecon-ch05">Chapter 5 "Life Decisions"</a>.</span></p>
+    <div class="callout block" id="cooperecon-ch10_s02_n02">
+        <h3 class="title"></h3>
+        <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s04#cooperecon-ch31_s04" xrefstyle="select:title">Section 31.4 "Choices over Time"</a> and <a class="xref" href="cooperecon-ch31_s07#cooperecon-ch31_s07" xrefstyle="select:title">Section 31.7 "Expected Value"</a></p>
+        <p class="para" id="cooperecon-ch10_s02_p03">You can review the meaning and calculation of discounted present value and expected value in the toolkit.</p>
+    </div>
+    <div class="section" id="cooperecon-ch10_s02_s01">
+        <h2 class="title editable block">The Value of an Orange Tree</h2>
+        <p class="para editable block" id="cooperecon-ch10_s02_s01_p01">Imagine that you own a very simple asset: an orange tree. The orange tree pays a “dividend” in the form of fruit that you can sell. What is the value to you of owning such a tree? You can think of this value as representing the most you would be willing to pay for the orange tree—that is, your valuation of the tree. As we proceed, we will link this value to the price of the orange tree.</p>
+        <p class="para editable block" id="cooperecon-ch10_s02_s01_p02">We begin by supposing your orange tree is <em class="emphasis">very</em> simple indeed. Next year, it will yield a crop of precisely one orange. That orange can be sold next year for $1. Then the tree will die. We suppose that you know all these things with certainty.</p>
+        <p class="para editable block" id="cooperecon-ch10_s02_s01_p03">The value to you of the orange tree today depends on the value of having $1 next year. A dollar next year is not worth the same as a dollar this year. If you have a dollar this year, you can put it in the bank and earn interest on it. The technique of discounted present value tells us that you must divide next year’s dollar by the <strong class="emphasis bold">nominal interest factor</strong> to find its value today:</p>
+        <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m002" display="block"><semantics><mtable> <mtr> <mtd> <maligngroup></maligngroup><mtext>value of tree</mtext><malignmark></malignmark><mtext> = discounted present value of $1 next year</mtext> </mtd> </mtr> <mtr> <mtd> <maligngroup></maligngroup><mtext> = </mtext><mfrac> <mrow> <mtext>$1</mtext> </mrow> <mrow> <mtext>1 + nominal interest rate</mtext> </mrow> </mfrac> </mtd> </mtr> <mtr> <mtd> <maligngroup></maligngroup><mtext> = </mtext><mfrac> <mrow> <mtext>$1</mtext> </mrow> <mrow> <mtext>nominal interest factor</mtext> </mrow> </mfrac> <mtext>.</mtext> </mtd> </mtr> </mtable>  </semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch10_s02_s01_p04">Here and for the rest of this chapter we use the nominal interest factor rather than the <strong class="emphasis bold">nominal interest rate</strong> to make the equations easier to read. The interest factor is 1 plus the interest rate, so whenever the interest rate is positive, the interest factor is greater than 1. We use the <em class="emphasis">nominal</em> interest factor because the flow benefit we are discounting has not been corrected for inflation. If this flow were already corrected for inflation, then we would instead discount by the <strong class="emphasis bold">real interest factor</strong>.</p>
+        <div class="callout block" id="cooperecon-ch10_s02_s01_n01">
+            <h3 class="title"></h3>
+            <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s06#cooperecon-ch31_s06" xrefstyle="select:title">Section 31.6 "The Credit Market"</a></p>
+            <p class="para" id="cooperecon-ch10_s02_s01_p05">You can review nominal and real interest rates and nominal and real interest factors in the toolkit.</p>
+        </div>
+        <p class="para block" id="cooperecon-ch10_s02_s01_p06">To see why this formula makes sense, begin with the special case of a nominal interest rate that is zero. Then using this formula, the discounted present value of a dollar next year is exactly $1. You would be willing to pay at most $1 today for the right to receive $1 next year. Similarly, if you put $1 in a bank paying zero interest today, you would have exactly $1 in the bank tomorrow. When the nominal interest rate is zero, $1 today and $1 next year are equally valuable. As another example, suppose the nominal interest rate is 10 percent. Using the formula, the discounted present value is <span class="inlineequation"><math xml:id="fwk-cooperecon-10_m003" display="inline"><semantics><mrow><mfrac><mrow><mi>$</mi><mn>1.00</mn> </mrow><mrow><mn>1.1</mn> </mrow> </mfrac> </mrow>  </semantics></math></span> = $0.909. If you put $0.909 in a bank account paying a 10 percent annual rate of interest (an interest factor of 1.1), then you would have $1 in the bank at the end of the year.</p>
+        <div class="section" id="cooperecon-ch10_s02_s01_s01">
+            <h2 class="title editable block">A Tree That Lives for Many Years</h2>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p01">Our orange tree was a very special tree in many ways. Now we make our tree more closely resemble real assets in the economy. Suppose first that the tree lives for several years, yielding its flow benefit of fruit for many years to come. Finding the value of the tree now seems much harder, but there are some tricks that help us determine the answer. Orange trees—like stocks, bonds, and other assets—can be bought and sold. So suppose that next year, you harvest the crop of one orange, sell it, and then also sell the tree. Using this strategy, the value of the tree is as follows:</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m004" display="block"><semantics><mrow><mtext>value of tree this year = </mtext><mfrac><mrow><mtext>value of crop next year + price of tree next year</mtext> </mrow><mrow><mtext>nominal interest factor</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p02">The first term is the same as before: it is the discounted present value to you of the crop next year ($1.00 in our example). The second term is the price that you can sell the tree for next year. After all, if the tree lives for 10 years, then next year it will still have 9 crops remaining and will still be a valuable asset.</p>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p03">This expression tells us something very important. The value of an asset depends on</p>
+            <ul class="itemizedlist editable block" id="cooperecon-ch10_s02_s01_s01_l01">
+                <li>the value of the flow benefit (here, the crop of oranges) that you obtain while owning the asset,</li>
+                <li>the price of the asset in the market when you sell it.</li>
+            </ul>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p04">The insight that the value of the tree equals the value of the crop plus next year’s price greatly simplifies the analysis. If you know the price next year, then you know the value of the tree to you this year. Of course, we do not yet know how the price next year is determined; we come back to that question later.</p>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p05">We can now give a more precise definition of the <span class="margin_term"><a class="glossterm">return on an asset</a><span class="glossdef">The amount you obtain, in percentage terms, from holding the asset for a year.</span></span>: it is the amount you obtain, in percentage terms, from holding the asset for a year. The return has two components: a flow of money (such as a dividend in the case of a stock) and the price of the asset. In the case of the orange tree, the return is calculated as</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m005" display="block"><semantics><mrow><mtext>1 + nominal return</mtext><malignmark></malignmark><mtext> = </mtext><mfrac><mrow><mtext>value of crop next year + price of tree next year</mtext> </mrow><mrow><mtext>value of tree this year</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p06">Because we know that</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m006" display="block"><semantics><mrow><mtext>value of tree this year = </mtext><mfrac><mrow><mtext>value of crop next year + price of tree next year</mtext> </mrow><mrow><mtext>nominal interest factor</mtext> </mrow> </mfrac><mo>,</mo> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p07">it follows that</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m007" display="block"><semantics><mrow><mtext>1 + nominal return</mtext><malignmark></malignmark><mtext> = nominal interest factor = 1 + nominal interest rate</mtext><mtext>.</mtext> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s01_p08">In this simple case, the return on the asset is equal to the nominal interest rate. If we wanted the real return, we would use the real interest factor (1 + the real interest rate) instead.</p>
+        </div>
+        <div class="section" id="cooperecon-ch10_s02_s01_s02">
+            <h2 class="title editable block">A Tree with a Random Crop</h2>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s02_p01">So far we have assumed that you know the orange crop with certainty. This is a good starting point but is not realistic if we want to use our story to understand the value of actual assets. We do not know for sure the future dividends that will be paid by a company whose stock we might own. Nor do we know the future price of a stock or a bond.</p>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s02_p02">Looking back at the tree that lives for one year only, imagine you do not know how many oranges it will yield. Start by assuming that you can buy a tree that lasts for one period and whose crop is not known with certainty. The value of the tree depends on the following.</p>
+            <ul class="itemizedlist editable block" id="cooperecon-ch10_s02_s01_s02_l01">
+                <li>The expected value of the crop. You must list all the possible outcomes and the probability of each outcome. For example, <a class="xref" href="#cooperecon-ch10_s02_s01_s02_t01">Table 10.1 "Expected Crop from an Orange Tree"</a> shows the case of a tree where there are three possible outcomes: 0, 1, or 2 oranges. The probability of 0 oranges is 10 percent—that is, 1 in 10 times on average, the tree yields no fruit. The probability of 1 orange is 50 percent: half the time, on average, the tree yields 1 fruit. And the probability of 2 oranges is 40 percent. The expected crop is obtained by adding together the numbers in the final column: 1.3 oranges.</li>
+                <li>A <span class="margin_term"><a class="glossterm">risk premium</a><span class="glossdef">An addition to the return on an asset that is demanded by investors to compensate for the riskiness of the asset.</span></span> is an addition to the return on an asset that is demanded by investors to compensate for the riskiness of the asset. This adjustment reflects the riskiness of the crop and how <strong class="emphasis bold">risk-averse</strong> the owner of the tree is. If the owner is <strong class="emphasis bold">risk-neutral</strong>, there is no need for a risk premium. Obviously enough, if the crop is known with certainty, there is also no need for a risk premium.</li>
+            </ul>
+            <div class="callout block" id="cooperecon-ch10_s02_s01_s02_n01">
+                <h3 class="title"></h3>
+                <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s07#cooperecon-ch31_s07" xrefstyle="select:title">Section 31.7 "Expected Value"</a></p>
+                <p class="para" id="cooperecon-ch10_s02_s01_s02_p03">You can review the concepts of risk aversion and risk-neutrality in the toolkit.</p>
+            </div>
+            <div class="table block" id="cooperecon-ch10_s02_s01_s02_t01" frame="all">
+                <p class="title"><span class="title-prefix">Table 10.1</span> Expected Crop from an Orange Tree</p>
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Outcome (Number of Oranges)</th>
+                            <th>Probability</th>
+                            <th>Probability × Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>0.1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>0.5</td>
+                            <td>0.5</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>0.4</td>
+                            <td>0.8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s02_p04">The easiest way to see how the risk premium works is to recognize that someone who is risk-averse will demand a higher return to hold a risky asset. Earlier, we said that the return on an asset without risk equals the nominal interest rate. In the case of a risky asset, however,</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m008" display="block"><semantics><mrow><mtext>1 + nominal return</mtext><malignmark></malignmark><mtext> = </mtext><mfrac><mrow><mtext>expected value of crop next year</mtext> </mrow><mrow><mtext>value of tree</mtext> </mrow> </mfrac><mtext> = nominal interest factor + risk premium</mtext><mtext>.</mtext> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s02_p05">From this we can see that there is a relationship between risk and return. If the crop is not risky, then the risk premium is zero, so the return equals the nominal interest rate. As the crop becomes riskier, the risk premium increases, causing an increase in the return per dollar invested.</p>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s02_p06">We can see how the risk premium affects the value of the tree by rearranging the equation:</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m009" display="block"><semantics><mrow><mtext>value of tree = </mtext><mfrac><mrow><mtext>expected value of crop next year</mtext> </mrow><mrow><mtext>nominal interest factor + risk premium</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s02_p07">For a given expected crop, the higher is the risk premium, the lower is the value of the tree.</p>
+        </div>
+        <div class="section" id="cooperecon-ch10_s02_s01_s03">
+            <h2 class="title editable block">The Value of an Asset in General</h2>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s03_p01">We have been talking about orange trees because they nicely illustrate the key features of more complex assets. We can combine the insights from our analysis of the orange tree to obtain a fundamental equation that we can use to value all kinds of assets:</p>
+            <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0010" display="block"><semantics><mrow><mtext>value of asset this year = </mtext><mfrac><mrow><mtext>flow benefit from asset + price of asset next year</mtext> </mrow><mrow><mtext>nominal interest factor + risk premium</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+            <p class="para editable block" id="cooperecon-ch10_s02_s01_s03_p02">We apply this equation throughout the remainder of the chapter. To keep things simple, however, we will suppose most of the time that there is no risk premium—that is, we will discount using the nominal interest factor alone, except when we explicitly want to talk about the riskiness of different assets. We can now use this formula to value assets that are more familiar, such as bonds, stocks, cars, and houses.</p>
+        </div>
+    </div>
+    <div class="section" id="cooperecon-ch10_s02_s02">
+        <h2 class="title editable block">The Value of a Bond</h2>
+        <p class="para editable block" id="cooperecon-ch10_s02_s02_p01">Suppose that you want to value a bond that lasts only one year. You will receive a payment from the borrower next year and then—because the bond has reached its maturity date—there will be no further payments. Naturally enough, the bond is worthless once it matures, so its price next year will be zero. This bond is like the first orange tree we considered: it delivers a crop next year and then dies. Hence we can value the bond using the formula</p>
+        <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0011" display="block"><semantics><mrow><mtext>value of bond this year = </mtext><mfrac><mrow><mtext>coupon payment next year</mtext> </mrow><mrow><mtext>nominal interest factor</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+        <p class="para block" id="cooperecon-ch10_s02_s02_p02">For example, if the coupon on the bond called for a payment of $100 next year and the nominal interest rate was zero, then the value of the bond today would be $100. But if the nominal interest rate was 10 percent, then the value of the bond today would be <span class="inlineequation"><math xml:id="fwk-cooperecon-10_m0012" display="inline"><semantics><mrow><mfrac><mrow><mi>$</mi><mn>100</mn> </mrow><mrow><mn>1.1</mn> </mrow> </mfrac> </mrow>  </semantics></math></span> = $90.91.</p>
+        <p class="para editable block" id="cooperecon-ch10_s02_s02_p03">If the bond has several years until maturity,</p>
+        <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0013" display="block"><semantics><mrow><mtext>value of bond this year = </mtext><mfrac><mrow><mtext>coupon payment next year + price of bond next year</mtext> </mrow><mrow><mtext>nominal interest factor</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch10_s02_s02_p04">This expression for the value of a bond is very powerful. It shows that a bond is more valuable this year if</p>
+        <ul class="itemizedlist editable block" id="cooperecon-ch10_s02_s02_l01">
+            <li>the coupon payment next year is higher,</li>
+            <li>the bond will sell for a higher price next year, or</li>
+            <li>interest rates are lower.</li>
+        </ul>
+        <p class="para editable block" id="cooperecon-ch10_s02_s02_p05">We explained earlier that bonds are subject to inflation risk. There are two ways of seeing this in our example. Imagine that inflation increases by 10 percentage points.</p>
+        <p class="para editable block" id="cooperecon-ch10_s02_s02_p06">This inflation means that the coupon payment next year will be worth less in real terms—that is, in terms of the amount of goods and services that it will buy. Also, from the <strong class="emphasis bold">Fisher equation</strong>, we know that increases in the inflation rate translate into changes in the nominal interest rate. If inflation increases by 10 percentage points and the real rate of interest is unchanged, then the nominal rate increases by 10 percentage points. So the discounted present value of the bond decreases. Inflation risk might cause a bondholder to include a risk premium when valuing the bond.</p>
+        <div class="callout block" id="cooperecon-ch10_s02_s02_n01">
+            <h3 class="title"></h3>
+            <p class="simpara">Toolkit: <a class="xref" href="cooperecon-ch31_s08#cooperecon-ch31_s08" xrefstyle="select:title">Section 31.8 "Correcting for Inflation"</a></p>
+            <p class="para" id="cooperecon-ch10_s02_s02_p07">You can review the Fisher equation in the toolkit.</p>
+        </div>
+    </div>
+    <div class="section" id="cooperecon-ch10_s02_s03">
+        <h2 class="title editable block">The Value of a Stock</h2>
+        <p class="para editable block" id="cooperecon-ch10_s02_s03_p01">Now let us use our general equation to evaluate the dividend flow from stock ownership. Imagine you are holding a share of a stock this year. You can hold it for a year, receive the dividend payment if there is one, and then sell the stock. For now we treat both the dividend and the price next year as if they are known for sure. What is the value of a share under that plan?</p>
+        <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0014" display="block"><semantics><mrow><mtext>value of share this year = </mtext><mfrac><mrow><mtext>dividend payment next year + price of share next year</mtext> </mrow><mrow><mtext>nominal interest factor</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch10_s02_s03_p02">This equation is similar to the one we used for the fruit tree and the bond. The flow benefit in this case is the dividend paid on the stock. Because the dividend is received next year, we have to discount it back to the current year using the nominal interest factor. The other part of the value of the share comes from the fact that it can be sold next year. Again, that share price must be discounted to put it in today’s terms. If the share does not pay a dividend next year, then its value is even simpler: the value of the share this year equals its price next year discounted by the nominal interest factor.</p>
+        <p class="para editable block" id="cooperecon-ch10_s02_s03_p03">The return to owning the share comes in two forms: the dividend and the gain from selling the share next year. To calculate the return per dollar invested, we divide the dividend and future price by the value of a share this year:</p>
+        <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0015" display="block"><semantics><mrow><mtext>return per dollar = </mtext><mfrac><mrow><mtext>dividend next year + price of share next year</mtext> </mrow><mrow><mtext>value of share this year</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch10_s02_s03_p04"><a class="xref" href="#cooperecon-ch10_s02_s03_t01">Table 10.2 "Discounted Present Value of Dividends in Dollars"</a> shows an example where we calculate the value of a stock using two different interest rates: 5 percent and 10 percent.</p>
+        <div class="table block" id="cooperecon-ch10_s02_s03_t01" frame="all">
+            <p class="title"><span class="title-prefix">Table 10.2</span> Discounted Present Value of Dividends in Dollars</p>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Dividend</th>
+                        <th>Price Next Year</th>
+                        <th>Discounted Present Value (5%)</th>
+                        <th>Discounted Present Value (10%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2.86</td>
+                        <td>2.73</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>4.76</td>
+                        <td>4.55</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>5.71</td>
+                        <td>5.45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="section" id="cooperecon-ch10_s02_s04">
+        <h2 class="title editable block">The Value of a House</h2>
+        <p class="para editable block" id="cooperecon-ch10_s02_s04_p01">There are other familiar assets that can also be valued in the same way. A house is an asset that delivers a benefit each year in the form of providing shelter. The value of a house is the flow of services that it provides over the coming year plus the price it could be sold for next year. Of course, instead of living in your house and enjoying the service flow, you could rent it out instead. Then</p>
+        <span class="informalequation block"><math xml:id="fwk-cooperecon-10_m0016" display="block"><semantics><mrow><mtext>value of house this year = </mtext><mfrac><mrow><mtext>value of rental payments over the next year + price of house next year</mtext> </mrow><mrow><mtext>nominal interest factor</mtext> </mrow> </mfrac><mtext>.</mtext> </mrow>  </semantics></math></span>
+        <p class="para editable block" id="cooperecon-ch10_s02_s04_p02">For a house and similar assets, the value today reflects</p>
+        <ul class="itemizedlist editable block" id="cooperecon-ch10_s02_s04_l01">
+            <li>the flow of services of the asset over a year,</li>
+            <li>the resale value next year, and</li>
+            <li>the interest rate that is used to discount the future flows.</li>
+        </ul>
+        <p class="para editable block" id="cooperecon-ch10_s02_s04_p03">This completely parallels what we have already found for both bonds and stocks.</p>
+        <div class="key_takeaways editable block" id="cooperecon-ch10_s02_s04_n01">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="cooperecon-ch10_s02_s04_l02">
+                <li>The value of an asset is the most you would pay to own that asset. The value today is the discounted value of the sum of the dividend (or service flow) plus the future price of the asset.</li>
+                <li>Because the return of owning an asset comes in the future, you use discounted present value to calculate the current value of the asset. If the dividend and future price are not corrected for inflation, then you discount using the nominal interest rate. If the dividend and future price have already been corrected for inflation, then you discount using the real interest rate.</li>
+                <li>The value of an asset is reduced by a risk premium that takes into account the riskiness of the asset and your risk aversion.</li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="cooperecon-ch10_s02_s04_n02">
+            <h3 class="title">Checking Your Understanding</h3>
+            <ol class="orderedlist" id="cooperecon-ch10_s02_s04_l03">
+                <li>Explain why an increase in the price of an asset in the future will increase its value today. Is this a violation of the law of demand?</li>
+                <li>In <a class="xref" href="#cooperecon-ch10_s02_s04">Section 10.2.4 "The Value of a House"</a>, we talked about houses. Can you think of other assets that could be valued using a similar formula?</li>
+                <li>Revise <a class="xref" href="#cooperecon-ch10_s02_s01_s02_t01">Table 10.1 "Expected Crop from an Orange Tree"</a> so that the probability of getting 0 oranges is 0 and the probability of getting 3 oranges is 0.1. What is the expected crop from this tree? Is it more or less valuable to you?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s14-01-a-walk-down-wall-street.html"><img src="shared/images/batch-left.png"></a> <a href="s14-01-a-walk-down-wall-street.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s14-03-asset-markets-and-asset-prices.html">Next Section</a> <a href="s14-03-asset-markets-and-asset-prices.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script>
+  
+  
+</body>
+</html>
